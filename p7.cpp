@@ -42,3 +42,41 @@ int main() {
 
 
 
+
+#include <iostream>
+#include <vector>
+#include <stack>
+
+std::vector<int> maxSubsequence(const std::vector<int>& nums, int K) {
+	int S = nums.size();
+	std::vector<int> result;
+	int toRemove = S - K;
+
+	for (int num : nums) {
+		while (!result.empty() && result.back() < num && toRemove > 0) {
+			result.pop_back();
+			toRemove--;
+		}
+		result.push_back(num);
+	}
+
+	// If we added more than K digits, truncate the excess
+	result.resize(K);
+	return result;
+}
+
+int main() {
+	std::vector<int> sequence = {3, 5, 2, 6, 4, 9};
+	int K = 3;
+
+	std::vector<int> result = maxSubsequence(sequence, K);
+
+	std::cout << "Largest subsequence of size " << K << ": ";
+	for (int digit : result) {
+		std::cout << digit;
+	}
+	std::cout << std::endl;
+
+	return 0;
+}
+
