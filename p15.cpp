@@ -13,17 +13,25 @@ char findOperator(string opr) {
     return 'x';
 }
 
+bool mark(char ch) {
+    return (ch == '-' || ch == '+');
+}
 int recursion(string s, int l, int r) {
     int num = 0;
     int flag = true;
+    int mul = 1;
     for (int i = l; i <= r; i++) {
-        if (!isDigit(s[i])) {
+        if (!isDigit(s[i]) && !mark(s[i])) {
             flag = false;
             break;
         }
+        if (s[i] == '-') {
+            mul = -1;
+        }
+        if (mark(s[i])) continue;
         num = num * 10 + (s[i] - '0');
     }
-    if (flag) return num;
+    if (flag) return mul * num;
     cout << l << " " << r << endl;
     // find the operator, expression 1 and 2
     // add(5,mul(3, 5))
