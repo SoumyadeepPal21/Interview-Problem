@@ -1,3 +1,10 @@
+// https://leetcode.com/discuss/post/6033289/google-l3-interview-experience-oct-2024-0xzt8/
+
+
+// Compute: add(sub(-5,10),mul(5,pow(2,5)))
+// (Used stack)
+// No follow up ques as this coding only took time.
+
 #include <bits/stdc++.h>
 using namespace std;
 
