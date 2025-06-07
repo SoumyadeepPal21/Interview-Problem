@@ -26,3 +26,10 @@ for (int i = max(1, low); i <= min(n - 2, high); i++) {
 }
 
 return -1;
+
+
+
+T(n) = T(2n / 3) + O(1)
+
+
+       T(n) = O(log₁.₅ n) ≈ O(log n)
