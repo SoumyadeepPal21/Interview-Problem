@@ -28,6 +28,7 @@ int main() {
 			} else {
 				stk.push(0);
 			}
+			lastSign = 1;
 		} else if (s[i] == ')') {
 			neg -= stk.top();
 			stk.pop();
