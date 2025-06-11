@@ -8,7 +8,7 @@ M = large prime modulus (like 10^9+7, 10^9+9)
 
 C++ Code (Single Hash):
 
-```cpp
+```
 #include <iostream>
 #include <string>
 using namespace std;
@@ -45,7 +45,7 @@ You compute two hashes with two different primes and moduli.
 
 C++ Code (Double Hash):
 
-```cpp
+```
 #include <iostream>
 #include <string>
 using namespace std;
