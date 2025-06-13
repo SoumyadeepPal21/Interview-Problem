@@ -1,10 +1,10 @@
-1. ask all clarifying questions, like
+1. Ask all clarifying questions, like
 	a. what will be the input and output
 	b. make some testcases
 	c. try to ask some constraints, like if the array is sorted, interger or float.
 
 
-2. tell your apporach breifly. If optimal came to mind fast, say that, if not try to put it like
+2. Tell your apporach breifly. If optimal came to mind fast, say that, if not try to put it like
  "the initail idea that came to my mind is like ...."
 
 
@@ -15,3 +15,12 @@
 5. after coding, check your code once and write the time and space complexit.
 
 6. try to dry run your code with some test cases. 
+
+7. Prepare good questions for the end. Interviewers value candidates who ask good questions at the end.
+
+
+
+googliness
+https://leetcode.com/discuss/post/5963463/googlyness-frequently-asked-questions-by-55sh/
+
+https://medium.com/@poojaauma/the-behavioral-questions-that-helped-me-in-my-googlyness-round-6c41433ea5dd
