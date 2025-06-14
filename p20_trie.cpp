@@ -49,6 +49,3 @@ while (!q.empty()) {
 
 space: O(N * L)
 time: O(N * L) in worst case => all words are unique and all exist in S as a subsequence,
-	      because all nodes in Trie structure can be explored once
-
-	      if the words are identical, then the time will decrease.

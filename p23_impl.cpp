@@ -34,3 +34,26 @@ void solve(vector<vector<string>> &dictionary) {
 		}
 	}
 }
+
+
+
+string userHistory1 = to_string(senderId) + to_string(receiverId);
+string userHistory2 = to_string(receiverId) + to_string(senderId);
+if (conversationHistory.count(userHistory) || conversationHistory.count(userHistory2)) continue;
+conversationCount[senderId]++;
+conversationCount[receiverId]++;
+conversationHistory.insert(userHistory);
+unordered_set<string> conversationHistory;
+
+
+int mxConversation = 0;
+int mostActiveUser = -1;
+
+for (auto [userId, count] : conversationCount) {
+	if (count > mxConversation) {
+		mxConversation = count;
+		mostActiveUser = userId;
+	}
+}
+
+return mostActiveUser;

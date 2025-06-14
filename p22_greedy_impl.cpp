@@ -28,3 +28,4 @@ for (auto [x , vec] : indMap) {
 		ans = max(ans, min((vec[r] - vec[l] + 1) + (k - op), n));
 	}
 }
+
