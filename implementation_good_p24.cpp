@@ -47,7 +47,6 @@ int main() {
 
     multiset<int> active;
 
-
     // Process events
     for (auto& e : events) {
         if (e.type == 0) { // add interval
