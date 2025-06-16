@@ -5,17 +5,6 @@
 
 using namespace std;
 
-struct Event {
-    int x;    // x-coordinate (point in sweep line)
-    int type; // 0 = add, 1 = remove
-    int val;  // for add/remove: value of interval; for query: query index
-
-    bool operator<(const Event& other) const {
-        if (x != other.x) return x < other.x;
-        return type < other.type; // process add before query before remove
-    }
-};
-
 int main() {
     int N, P;
     cin >> N >> P;
@@ -51,4 +40,11 @@ int main() {
     }
 
     return 0;
+}
+
+
+
+
+void dfs(TreeNode* root, int cnt, bool isParentIsland) {
+    if (!root) return;
 }
