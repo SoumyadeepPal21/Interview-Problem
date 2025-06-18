@@ -26,7 +26,7 @@ public:
 	DecoderIterator(TreeNode* _root, const string& _encodedString)
 		: root(_root), encodedString(_encodedString), index(0) {}
 
-	void fun() {
+	bool fun() {
 		TreeNode* curr = root;
 		while (index < encodedString.size()) {
 			char c = encodedString[index++];
@@ -36,13 +36,13 @@ public:
 					for (char dc : curr->decodedString) {
 						outputBuffer.push(dc);
 					}
-					return;
+					return true;
 				}
 			} else {
-				throw runtime_error("Invalid encoding path in tree!");
+				break;
 			}
 		}
-		// throw runtime_error("Decoding failed!");
+		return false;
 	}
 	char next() {
 		if (!hasNext()) throw runtime_error("No more characters!");
@@ -55,8 +55,7 @@ public:
 	bool hasNext() {
 		if (!outputBuffer.empty()) return true;
 		if (index == encodedString.size()) return false;
-		fun();
-		return (!outputBuffer.empty());
+		return fun() ;
 	}
 };
 
