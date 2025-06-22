@@ -24,3 +24,16 @@ googliness
 https://leetcode.com/discuss/post/5963463/googlyness-frequently-asked-questions-by-55sh/
 
 https://medium.com/@poojaauma/the-behavioral-questions-that-helped-me-in-my-googlyness-round-6c41433ea5dd
+
+
+Tell me about one of the biggest accomplishments in your career so far.
+
+
+-> check the fit tracking code()
+
+
+USER=>admin, HOME=>/%USER%/home
+
+
+
+%USER% ... %

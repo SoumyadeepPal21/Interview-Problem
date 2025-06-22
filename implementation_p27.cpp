@@ -47,4 +47,27 @@ int main() {
 
 void dfs(TreeNode* root, int cnt, bool isParentIsland) {
     if (!root) return;
+
+    if (root->val == 0) {
+        dfs(root->left, cnt, false);
+        dfs(root->right, cnt, false);
+    }
 }
+
+
+
+
+class MovieRater {
+    int n;
+public:
+    MovieRater(int n) {
+        this->n = n;
+    }
+    void insertMovie(int id, int rating) {
+
+    }
+    void addSimilarMovie(int id, int )
+};
+
+
+

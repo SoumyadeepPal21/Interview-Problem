@@ -85,3 +85,51 @@ Prime bases like 31, 53, 101 are popular for lowercase/uppercase strings.
 Modulo primes like 1e9+7, 1e9+9, 998244353 are commonly used to prevent overflow.
 
 If you want rolling hashes (for substring search) or custom hash functions for unordered_map, I can guide you too.
+
+
+
+######################################
+
+submask :
+for (int m = 0; m < (1 << n); ++m)
+for (int s = m; s; s = (s - 1)&m)
+... s and m ...
+Let's prove that the inner loop will execute a total of O(3 ^ n) iterations.
+
+
+
+First proof : Consider the i - th bit. There are exactly three options for it :
+
+it is not included in the mask
+m ( and therefore not included in submask s),
+    it is included in m, but not included in s, or
+    it is included in both m and s.
+
+
+########################################################
+
+Custom comparator:
+
+struct CustomCompare {
+    bool operator()(const std::string& a, const std::string& b) const {
+        return a.length() < b.length();  // sort by string length
+    }
+};
+
+int main() {
+    std::set<std::string, CustomCompare> s;
+
+    priority queue<int, vector<int>, CustomCompare> pq;
+    s.insert("apple");
+    s.insert("kiwi");
+    s.insert("banana");
+
+    for (const auto& str : s)
+        std::cout << str << " ";
+
+    std::vector<std::string> v = {"apple", "kiwi", "banana"};
+    std::sort(v.begin(), v.end(), CustomCompare());
+
+    for (const auto& s : v)
+        std::cout << s << " ";
+}

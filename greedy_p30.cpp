@@ -18,3 +18,4 @@ int solve(const vector<int>& balls, const int k) {
     }
           return used + opt;
 }
+
