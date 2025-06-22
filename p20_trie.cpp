@@ -39,7 +39,6 @@ while (!q.empty()) {
 	}
 	q.pop();
 	for (int ch = 0; ch < 26; ch++) {
-		\
 		if (node->children[ch] && next[index][ch] < n) {
 			q.push({node->children[ch], next[index][ch] + 1});
 		}
