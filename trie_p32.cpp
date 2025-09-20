@@ -95,3 +95,32 @@ int main() {
 
 	return 0;
 }
+
+
+class Solution {
+public:
+	int minTime(int n, vector<vector<int>>& edges) {
+		vector<vector<tuple<int, int, int>>> g(n);
+		for (auto&e : edges)g[e[0]].emplace_back(e[1], e[2], e[3]);
+		const long long INF = LLONG_MAX;
+		vector<long long> dist(n, INF);
+		priority_queue<pair<long long, int>, vector<pair<long long, int>>, greater<>> pq;
+		dist[0] = 0;
+		pq.emplace(0, 0);
+		while (!pq.empty()) {
+			auto [t, u] = pq.top(); pq.pop();
+			if (t > dist[u])continue;
+			if (u == n - 1)break;
+			for (auto&[v, s, e] : g[u]) {
+				long long nt;
+				if (t > e)continue;
+				nt = (t < s ? s : t) + 1;
+				if (nt < dist[v]) {
+					dist[v] = nt;
+					pq.emplace(nt, v);
+				}
+			}
+		}
+		return dist[n - 1] == INF ? -1 : dist[n - 1];
+	}
+};

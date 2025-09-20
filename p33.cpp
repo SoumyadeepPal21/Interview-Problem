@@ -1,6 +1,6 @@
-https://leetcode.com/discuss/post/6617221/google-l3-interview-experience-by-anonym-nt48/
+// https://leetcode.com/discuss/post/6617221/google-l3-interview-experience-by-anonym-nt48/
 
-Create a double ended queue functionalty such as push / pop - front / back, size of double ended queue and printing all elements of queue using only map data structure.
+// Create a double ended queue functionalty such as push / pop - front / back, size of double ended queue and printing all elements of queue using only map data structure.
 
 #include <iostream>
 #include <unordered_map>

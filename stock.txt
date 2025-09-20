@@ -1,0 +1,1192 @@
+
+#######################################################################################################
+
+financial service -> finance
+
+nbfc_symbols = [
+    "BAJFINANCE.NS",      # Bajaj Finance
+    "CHOLAFIN.NS",        # Cholamandalam Investment & Finance
+    "SHRIRAMFIN.NS",      # Shriram Finance
+    "MUTHOOTFIN.NS",      # Muthoot Finance
+    "SBICARD.NS",         # SBI Cards
+    "HDBFS.NS",         # HDB Financial Services
+    "AIIL.NS",          # Authum Investment
+    "LTF.NS",            # L&T Finance Ltd
+    "SUNDARMFIN.NS",      # Sundaram Finance
+    "M&MFIN.NS",          # Mahindra & Mahindra Financial Services
+    "POONAWALLA.NS",      # Poonawalla Finance
+    "PEL.NS",         # Piramal Enterprises
+    "MANAPPURAM.NS",      # Manappuram Finance
+    "IIFL.NS",            # IIFL Finance
+    "CGCL.NS",     # Capri Global
+    "FIVESTAR.NS",        # Five-Star Business Finance
+    "SBFC.NS",            # SBFC Finance
+    "533095.BO"      # Bengal & Assam Company
+]
+
+
+
+housing_finance_symbols = [
+"BAJAJHLDNG.NS", # Bajaj Housing Finance
+"LICHSGFIN.NS", # LIC Housing Finance
+"AADHARHFC.NS", # Aadhar Housing Finance
+"PNBHOUSING.NS", # PNB Housing Finance
+"APTUS.NS", # Aptus Value Housing Finance
+"HOMEFIRST.NS", # Home First Finance Company
+"AAVAS.NS", # Aavas Financiers
+"SAMMAANCAP.NS", # Sammaan Capital
+"CANFINHOME.NS", # Can Fin Homes
+"INDIAGLYCO.NS", # INDIA SHELTE FIN (check for exact name)
+"REPCOHOME.NS" # Repco Home Finance
+]    
+
+
+investment_company_symbols = [
+"JIOFIN.NS", # Jio Financial
+"ADANIGREEN.NS", # Aditya Birla Cap (Common symbol for Aditya Birla Group, please verify exact symbol)
+"TATACONSUM.NS", # Tata Inv.Corpn. (This is for Tata Consumer, please verify specific symbol)
+"CHOLAFIN.NS", # Chola Financial
+"TVSMOTOR.NS", # TVS Holdings
+"JSWSTEEL.NS", # JSW Holdings (Typically JSW Steel traded under this symbol)
+"MAHSCOOTER.NS", # Mah. Scooters (Mahindra & Mahindra, verify if correct for scooters business)
+"SUNDRMFAST.NS", # Sundaram Fin.Hol
+"RELIGARE.NS" # Religare Enterp.
+]  
+
+
+holding_company_symbols = [
+    "BAJAJFINSV.NS",    # Bajaj Finserv
+    "BAJAJHLDNG.NS",    # Bajaj Holdings
+    "JMFINANCIL.NS",    # JM Financial
+    "CHOICEIN.NS",     # Choice Intl.
+    "EDELWEISS.NS",     # Edelweiss.Fin.
+    "532468.BO",  # Kama Holdings
+    "PILANIINVS.NS"     # Pilani Invest.
+]
+
+financial_institution_symbols = [
+    "IRFC.NS",          # I R F C
+    "PFC.NS",           # Power Fin.Corpn.
+    "RECLTD.NS",        # REC Ltd
+    "HUDCO.NS",         # H U D C O
+    "IREDA.NS",      # Indian Renewable (Indian Renewable Energy Development Agency Ltd)
+    "IFCI.NS",          # IFCI
+    "TFCILTD.NS",     # Tour. Fin. Corp.
+    "530927.BO",        # Haryana Fin. Co. (Haryana Financial Corporation not exactly, HFCLTD is different; verification suggested)
+    "GSFC.NS"           # Guj. State Fin.
+]
+
+microfinance_symbols = [
+    "CREDITACC.NS",    # CreditAccess Grameen
+    "MUTHOOTMF.NS",    # Muthoot Microfin
+    "FUSION.NS",    # Fusion Finance
+    "SPANDANA.NS",     # Spandana Sphoort
+    "SATIN.NS"         # Satin Creditcare
+]
+
+other_financial_service_symbols = [
+    "CRISIL.NS",          # CRISIL
+    "504346.BO",            # RRPSemiconductor (BSE code, NSE not listed)
+    "DHANI.NS",           # Dhani Services
+    "539895.BO",          # Spice LoungeFood
+    "505725.BO",           # Algoquant Fin
+    "542866.BO",           # Colab Platforms
+    "CENTRUM.NS",         # Centrum Capital
+    "WEALTH.NS",          # Wealth First Por
+    "PRIMESECU.NS",           # Prime Securities
+    "504340.BO",          # The Invest.Trust
+    "507912.BO",            # LKP Finance
+    "531301.BO",            # RNFI Services
+    "540062.BO",            # NDL Ventures
+    "540073.BO",          # Arunis Abode
+    "531436.BO",          # Regency Fincorp
+]
+
+######################################################################
+
+financial service -> bank
+
+private_bank_symbols = [
+    "HDFCBANK.NS",      # HDFC Bank
+    "ICICIBANK.NS",     # ICICI Bank
+    "KOTAKBANK.NS",     # Kotak Mahindra Bank
+    "AXISBANK.NS",      # Axis Bank
+    "IDBI.NS",          # IDBI Bank
+    "YESBANK.NS",       # Yes Bank
+    "INDUSINDBK.NS",    # IndusInd Bank
+    "IDFCFIRSTB.NS",    # IDFC First Bank
+    "FEDERALBNK.NS",    # Federal Bank
+    "BANDHANBNK.NS",    # Bandhan Bank
+    "KARURVYSYA.NS",    # Karur Vysya Bank
+    "RBLBANK.NS",       # RBL Bank
+    "CUB.NS",           # City Union Bank
+    "J&KBANK.NS",       # J & K Bank
+    "SOUTHBANK.NS",     # South Indian Bank
+    "TNMERCANTILE.NS",  # T N Mercantile Bank
+    "KTKBANK.NS"           # Karnataka Bank
+]
+
+public_sector_bank_symbols = [
+    "SBIN.NS",         # SBI
+    "BANKBARODA.NS",   # Bank of Baroda
+    "PNB.NS",          # Punjab National Bank
+    "UNIONBANK.NS",    # Union Bank of India
+    "CANBK.NS",        # Canara Bank
+    "INDIANB.NS",      # Indian Bank
+    "IOB.NS",          # Indian Overseas Bank
+    "BANKINDIA.NS",    # Bank of India
+    "MAHABANK.NS",     # Bank of Maharashtra
+    "UCOBANK.NS",      # UCO Bank
+    "CENTRALBK.NS",    # Central Bank of India
+    "PSB.NS"           # Punjab & Sind Bank
+]
+
+microfinance_smallfinance_symbols = [
+    "AUBANK.NS",       # AU Small Finance
+    "UJJIVANSFB.NS",   # Ujjivan Small
+    "EQUITASBNK.NS",   # Equitas Small Finance
+    "JSFB.NS",         # Jana Small Finance
+    "UTKARSHBNK.NS",   # Utkarsh Small Finance
+    "FINOPB.NS",       # Fino Payments Bank
+    "ESAFSFB.NS",      # ESAF Small Finance
+    "SURYODAY.NS",     # Suryoday Small Finance
+    "CAPITALSFB.NS"    # Capital Small Finance
+]
+
+#######################################################
+
+financial service -> capital market
+
+capital_market_amc_stocks = [
+    "HDFCAMC.NS",       # HDFC AMC
+    "BSE.NS",           # BSE
+    "MOTILALOFS.NS",    # Motilal Oswal Financial Services
+    "NAM-INDIA.NS",     # Nippon Life India Asset Mgmt
+    "360ONE.NS",        # 360 ONE (formerly IIFL Wealth)
+    "MCX.NS",           # Multi Commodity Exchange
+    "CDSL.NS",          # Central Depository Services
+    "544467.BO",          # NSDL (recently listed)
+    "ABSLAMC.NS",       # Aditya Birla Sun Life AMC
+    "ANANDRATHI.NS",    # Anand Rathi Wealth
+    "NUVAMA.NS",        # Nuvama Wealth
+    "ANGELONE.NS",      # Angel One
+    "CAMS.NS",          # CAMS Services
+    "KFINTECH.NS",      # KFin Technologies
+    "UTIAMC.NS",        # UTI AMC
+    "IEX.NS",           # Indian Energy Exchange
+    "PRUDENT.NS",       # Prudent Corporate Advisory
+    "IIFLCAPS.NS",       # IIFL Securities / IIFL Capital
+    "ICRA.NS",          # ICRA
+    "CARERATING.NS",    # CARE Ratings
+    "SHAREINDIA.NS",     # Share India Securities
+    "MONARCH.NS",           # Monarch Networth Capital Ltd
+    "GEOJITFSL.NS",         # Geojit Financial Services Ltd
+    "INDOTHAI.NS",          # Indo Thai Securities Ltd
+    "MASTERTR.NS",          # Master Trust Ltd
+    "526506.BO",        # Systematix Corporate Services Ltd
+    "DAMCAPITAL.NS",            # Dam Capital Advisors Ltd
+    "DOLATALGO.NS",             # Dolat Algotech Ltd
+    "SMCGLOBAL.NS",               # SMC Global Securities Ltd
+    "5PAISA.NS",            # 5paisa Capital Ltd
+    "ARIHANTCAP.NS",           # Arihant Capital Markets Ltd
+    "BIRLAMONEY.NS",            # Aditya Birla Money Ltd
+    "531359.BO",        # Shriram Asset Management Company Ltd
+    "GCSL.NS",              # Gretex Corporate Services Ltd
+    "EMKAY.NS",             # Emkay Global Financial Services Ltd
+    "512393.BO",           # Shardul Securities Ltd
+    "500069.BO",             # Quest Capital Markets Ltd
+    "ALMONDZ.NS",           # Almondz Global Securities Ltd
+    "IVC.NS",        # IL&FS Investment Managers Ltd
+    "544141.BO",              # Puneet Resins Ltd
+    "530585.BO",          # Swastika Investmart Ltd
+    "KEYFINSERV.NS",           # Keynote Financial Services Ltd
+    "INVENTURE.NS",         # Inventure Growth & Securities Ltd
+    "540192.BO"               # LKP Securities Ltd
+]
+
+###########################################
+
+financial service -> insurance
+
+insurance_symbols = [
+    "LICI.NS",        # Life Insurance Corp. of India
+    "SBILIFE.NS",     # SBI Life Insurance
+    "HDFCLIFE.NS",    # HDFC Life Insurance
+    "ICICIPRULI.NS",  # ICICI Prudential Life
+    "MFSL.NS"       # Max Financial Services
+]
+
+
+
+###########################################
+
+financial service -> fin tech
+
+fin_tech_symbols = [
+    "POLICYBZR.NS",    # PB Fintech (Policybazaar)
+    "PAYTM.NS",        # One 97 Communications (Paytm)
+    "INFIBEAM.NS",        # Infibeam Avenues
+    "MOBIKWIK.NS",     # One Mobikwik Systems
+    "MOS.NS",      # MOS Utility
+    "SUVIDHAA.NS",     # Suvidhaa Infoserve
+    "511147.BO",         # WSFX Global Pay
+    "AGSTRA.NS",       # AGS Transact Technologies
+]
+
+
+#######################################################################################################
+
+
+#######################################################################################################    
+
+power_symbols = [
+    "NTPC.NS",            # NTPC
+    "POWERGRID.NS",       # Power Grid Corporation
+    "ADANIPOWER.NS",      # Adani Power
+    "ADANIGREEN.NS",      # Adani Green
+    "TATAPOWER.NS",       # Tata Power
+    "ADANIENSOL.NS",      # Adani Energy Solutions
+    "NTPCGREEN.NS",       # NTPC Green Energy
+    "JSWENERGY.NS",       # JSW Energy
+    "NHPC.NS",            # NHPC
+    "TORNTPOWER.NS",      # Torrent Power
+    "SJVN.NS",            # SJVN
+    "NLCINDIA.NS",        # NLC India
+    "CESC.NS",            # CESC
+    "NAVA.NS",            # Nava
+    "RELINFRA.NS",        # Reliance Power
+    "ACMESOLAR.NS",       # ACME Solar Holdings
+    "INDIGRID.NS",        # IndiGrid Trust
+    "JPPOWER.NS",         # JP Power Ventures
+    "RELINFRA.NS",        # Reliance Infrastructure
+    "KPIGREEN.NS",         # KPI Green Energy
+    "POWERGRID.NS",       # Powergrid Infrastructure
+    "GMRP&UI.NS",        # GMR Urban
+    "RTNPOWER.NS",       # RattanIndia Power
+    "INOXGREEN.NS",       # Inox Green
+    "PTC.NS"              # PTC India
+]
+
+#######################################################################################################
+
+
+
+#######################################################################################################
+
+reality_sector_symbols = [
+    "DLF.NS",             # DLF
+    "LODHA.NS",           # Lodha Developers
+    "PRESTIGE.NS",        # Prestige Estates
+    "GODREJPROP.NS",      # Godrej Properties
+    "OBEROIRLTY.NS",          # Oberoi Realty
+    "PHOENIXLTD.NS",    # Phoenix Mills
+    "EMBASSY.NS",         # Embassy Office REIT
+    "MINDSPACE.NS",       # Mindspace Business Parks REIT
+    "BRIGADE.NS",         # Brigade Enterprises
+    "NXST.NS",     # Nexus Select
+    "BIRET.NS",      # Brookfield India REIT
+    "ANANTRAJ.NS",        # Anant Raj
+    "SIGNATURE.NS",       # Signature Global
+    "SOBHA.NS",           # Sobha
+    "EMBDL.NS",      # Embassy Developers
+    "LOTUSDEV.NS",        # Sri Lotus
+    "RUSTOMJEE.NS",        # Keystone Realtors
+    "KALPATARU.NS",          # Kalpataru
+    "MAHLIFE.NS",    # Mahindra Lifespace Developers
+    "GANESHHOUC.NS",          # Ganesh Housing
+    "MAXESTATES.NS",      # Max Estates
+    "PURVA.NS",     # Puravankara
+    "SUNTECK.NS"          # Sunteck Realty
+]
+#######################################################################################################
+
+
+#######################################################################################################
+
+auto_component_symbols = [
+    "BOSCHLTD.NS",       # Bosch
+    "MOTHERSON.NS",        # Samvardhana Motherson
+    "UNOMINDA.NS",       # Uno Minda
+    "SCHAEFFLER.NS",     # Schaeffler India
+    "TIINDIA.NS",     # Tube Investments
+    "BHARATFORG.NS",     # Bharat Forge
+    "ENDURANCE.NS",      # Endurance Technologies
+    "EXIDEIND.NS",       # Exide Industries
+    "MSUMI.NS",     # Motherson Wiring
+    "SONACOMS.NS",         # Sona BLW Precision
+    "ZFCVINDIA.NS",        # ZF Commercial
+    "SUNDRMFAST.NS",      # Sundram Fasteners
+    "ASAHIINDIA.NS",     # Asahi India Glass
+    "ARE&M.NS",     # Amara Raja Batteries
+    "GABRIEL.NS",        # Gabriel India
+    "CRAFTSMAN.NS",      # Craftsman Auto
+    "CIEINDIA.NS",        # CIE Automotive India
+    "JBMA.NS",        # JBM Auto
+    "BELRISE.NS",        # Belrise Industries
+    "MINDACORP.NS",          # Minda Corp
+    "SHRIPISTON.NS",       # Shriram Pistons
+    "RKFORGE.NS",     # Ramkrishna Forgings
+    "ASKAUTOLTD.NS",        # ASK Automotive
+    "BANCOINDIA.NS",          # Banco Products
+    "VARROC.NS"          # Varroc Engineering
+]
+
+automobile_symbols = [
+    "MARUTI.NS",        # Maruti Suzuki India Ltd.
+    "M&M.NS",           # Mahindra & Mahindra Ltd.
+    "TATAMOTORS.NS",    # Tata Motors Ltd.
+    "BAJAJ-AUTO.NS",    # Bajaj Auto Ltd.
+    "HYUNDAI.NS",       # Hyundai Motor India Ltd.
+    "EICHERMOT.NS",     # Eicher Motors Ltd.
+    "TVSMOTOR.NS",      # TVS Motor Co. Ltd.
+    "HEROMOTOCO.NS",    # Hero MotoCorp Ltd.
+    "FORCEMOT.NS",      # Force Motors Ltd.
+    "OLAELEC.NS",       # Ola Electric Mobility Ltd. — confirmed NSE ticker :contentReference[oaicite:0]{index=0}
+    "ATHERENERG.NS",    # Ather Energy Ltd. — confirmed NSE ticker :contentReference[oaicite:1]{index=1}
+    "OLECTRA.NS",       # Olectra Greentech Ltd. — confirmed NSE ticker :contentReference[oaicite:2]{index=2}
+    "LANDMARKN.NS"      # Landmark Cars (Landmark Cars Ltd.) – ticker verified as LANDMARKN.NS
+]
+
+
+#######################################################################################################
+
+
+
+#######################################################################################################
+
+
+Agricultural, Commercial & Construction Vehicles Companies 
+
+construction_vehicles_symbols = [
+    "BEML.NS",       # BEML Ltd
+    "ACE.NS",        # Action Construction Equipment
+    "AJAXENGG.NS",   # Ajax Engineering
+    "TIL.NS",        # TIL
+    "BRADYMORRIS.NS" # Brady & Morris
+]
+
+commercial_vehicles_symbols = [
+    "ATULAUTO.NS",       # Atul Auto
+    "SMLISUZU.NS",       # SML Isuzu
+    "ASHOKLEY.NS"        # Ashok Leyland
+]
+
+tractors_symbols = [
+    "ESCORTS.NS",       # Escorts Kubota
+    "VSTTILLERS.NS",    # VST Tillers Tractors
+    "INDOFARM.NS"       # Indo Farm Equipment
+]
+
+
+########################################
+
+industrial_product_symbols = [
+    "POLYCAB.NS",   # Polycab India
+    "CUMMINSIND.NS",     # Cummins India
+    "SUPREMEIND.NS",     # Supreme Industries
+    "APLAPOLLO.NS",      # APL Apollo Tubes
+    "ASTRAL.NS",         # Astral
+    "KEI.NS",            # KEI Industries
+    "AIAENG.NS",         # AIA Engineering
+    "SHYAMMETL.NS",      # Shyam Metalics
+    "HBLENGINE.NS",       # HBL Engineering
+    "WELCORP.NS",        # Welspun Corp
+    "SKFINDIA.NS",       # SKF India
+    "TIMKEN.NS",         # Timken India
+    "PTC.NS",            # PTC Industries
+    "CARBORUNIV.NS",     # Carborundum Universal
+    "GRINDWELL.NS",      # Grindwell Norton
+    "RATNAMANI.NS",      # Ratnamani Metals
+    "GPIL.NS",       # Godawari Power
+    "KIRLOSBROS.NS",     # Kirloskar Brothers
+    "ELGIEQUIP.NS",      # Elgi Equipments
+    "KSB.NS"             # KSB
+]
+
+###############################
+
+
+
+electrical_equipment_symbols = [
+    "ENRIN.NS",       # Siemens Ener.Ind
+    "CGPOWER.NS",     # CG Power & Ind
+    "SIEMENS.NS",     # Siemens
+    "ABB.NS",         # A B B
+    "WAAREEENER.NS",  # Waaree Energies
+    "POWERINDIA.NS",  # Hitachi Energy
+    "SUZLON.NS",      # Suzlon Energy
+    "BHEL.NS",        # B H E L
+    "GVT&D.NS",       # GE Vernova T&D
+    "PREMIERENE.NS",  # Premier Energies
+    "THERMAX.NS",     # Thermax
+    "APARINDS.NS",    # Apar Inds.
+    "INOXWIND.NS",    # Inox Wind
+    "SCHNEIDER.NS",   # Schneider Elect.
+    "TRITURBINE.NS",  # Triveni Turbine
+    "TARIL.NS",       # T R I L
+    "ELECON.NS",      # Elecon Engg.Co
+    "VIKRAMSOLR.NS",  # Vikram Solar
+    "WAAREERTL.NS",   # Waaree Renewab.
+    "TRANSRAILL.NS",  # Transrail Light
+    "AZAD.NS",        # Azad Engineering
+    "GENUSPOWER.NS",  # Genus Power
+    "TDPOWERSYS.NS",  # TD Power Systems
+    "VOLTAMP.NS",     # Volt.Transform.
+    "DIACABS.NS",     # Diamond Power
+    "QPOWER.NS",      # Quality Power El
+    "SKIPPER.NS",     # Skipper
+    "WEBELSOLAR.NS",  # Websol Energy
+    "AVALON.NS",      # Avalon Tech
+    "531201.BO",      # Shilchar Tech.
+    "ORIANA.NS",      # Oriana Power Ltd
+    "BBL.NS",         # Bharat Bijlee
+    "RAMRAT.NS",      # Ram Ratna Wires
+    "517467.BO",      # Marsons
+    "ALPEXSOLAR.NS",  # Alpex Solar
+    "SERVOTECH.NS",   # Servotech Renew
+    "RELTD.NS",       # Ravindra Energy
+    "GVPIL.NS",       # GE Power
+    "BAJEL.NS",       # Bajel Projects
+    "EXICOM.NS",       # Exicom Tele-Sys.
+    "INDOTECH.NS",     # Indo Tech.Trans.
+    "JYOTISTRUC.NS",   # Jyoti Structures
+    "517035.BO",       # RIR Power Electr
+    "WAAREEINDO.NS",   # Indosolar
+    "RISHABH.NS",      # Rishabh Instrum.
+    "MEIL.NS",         # Mangal Electrica
+    "SALZERELEC.NS",   # Salzer Electron.
+]
+
+#################################
+
+defence_aerospace_symbols = [
+    "HAL.NS",            # Hindustan Aeronautics
+    "BEL.NS",            # Bharat Electronics
+    "BDL.NS",            # Bharat Dynamics
+    "GRSE.NS",           # Garden Reach Shipbuilders & Engineers
+    "DATAPATTNS.NS",     # Data Patterns
+    "ZENTEC.NS",         # Zen Technologies
+    "ASTRAMICRO.NS",     # Astra Microwave Products
+    "APOLLO.NS",         # Apollo Micro Systems
+    "MIDHANI.NS",        # Mishra Dhatu Nigam
+    "UNIMECH.NS",        # Unimech Aerospace (recent IPO, ticker may vary)
+    "AXISCADES.NS",      # AXISCADES Technologies
+    "PARAS.NS",          # Paras Defence & Space Technologies
+    "MTARTECH.NS",       # MTAR Technologies
+    "AVANTEL.NS",        # Avantel
+    "DCXINDIA.NS"        # DCX Systems
+]
+
+
+#####################################
+
+ship_building_symbols = [
+    "MAZDOCK.NS",     # Mazagon Dock
+    "COCHINSHIP.NS",  # Cochin Shipyard
+    "SWANDEF.NS",     # Swan Defence
+    "537669.BO",      # Laxmipati Engg
+    "526931.BO"      # Hariyana Ship
+]    
+
+
+railway_wagons_symbols = [
+    "JWL.NS",         # Jupiter Wagons
+    "TITAGARH.NS"     # Titagarh Rail
+]
+#########################################
+
+
+
+industrial_product_symbols = [
+    "KAYNES.NS",    # Kaynes Tech
+    "HONAUT.NS",    # Honeywell Auto
+    "JYOTICNC.NS",  # Jyoti CNC Auto.
+    "SYRMA.NS",     # Syrma SGS Tech.
+    "CPPLUS.NS",    # Aditya Infotech
+    "LMW.NS",       # LMW
+    "TEGA.NS",      # Tega Inds.
+    "LLOYDSENGG.NS",# Lloyds Engineeri
+    "PRAJIND.NS",   # Praj Industries
+    "TEXRAIL.NS",   # Texmaco Rail
+    "GMMPFAUDLR.NS",# GMM Pfaudler
+    "KENNAMET.NS",  # Kennametal India
+    "ANUP.NS",      # The Anup Enginee
+    "DYNAMATECH.NS" # Dynamatic Tech.
+]
+
+#######################################################################################################
+
+#######################################################################################################
+
+it_service_symbols = [
+    "LTTS.NS",      # L&T Technology Services (L&T Technology)
+    "AFFLE.NS",     # Affle 3i
+    "TATATECH.NS",  # Tata Technologies
+    "INVNTURUS.NS", # Inventurus Knowledge Solutions
+    "CYIENT.NS",    # Cyient
+    "NETWEB.NS",    # Netweb Technologies
+    "BLACKBOX.NS",  # Black Box (Black Box Ltd)
+    "DMARTICS.NS",  # Datamatics Global Services (abbreviated)
+    "EMUDHRA.NS",   # eMudhra
+    "RSYSTEMS.NS",  # R Systems International
+    "ZAGGLE.NS",    # Zaggle Prepaid
+    "E2E.NS",       # E2E Networks
+    "CIGNITITEC.NS",# Cigniti Technologies
+    "NETWORK18.NS"  # Network People (Network18 Media & Investments; adjust if needed)
+]
+
+
+
+it_software_symbols = [
+    "TCS.NS",           # TCS
+    "INFY.NS",          # Infosys
+    "HCLTECH.NS",       # HCL Technologies
+    "WIPRO.NS",         # Wipro
+    "LTIM.NS",          # LTIMindtree
+    "TECHM.NS",         # Tech Mahindra
+    "PERSISTENT.NS",    # Persistent Sys
+    "OFSS.NS",          # Oracle Fin.Serv.
+    "COFORGE.NS",       # Coforge
+    "MPHASIS.NS",       # Mphasis
+    "HEXT.NS",          # Hexaware Tech.
+    "TATAELXSI.NS",     # Tata Elxsi
+    "KPITTECH.NS",      # KPIT Technologi.
+    "ZENSARTECH.NS",    # Zensar Tech.
+    "INTELLECT.NS",     # Intellect Design
+    "NEWGEN.NS",        # Newgen Software
+    "BSOFT.NS",         # Birlasoft Ltd
+    "SONATSOFTW.NS",    # Sonata Software
+    "MAPMYINDIA.NS",    # C.E. Info System
+    "HAPPSTMNDS.NS",    # Happiest Minds
+    "LATENTVIEW.NS",    # Latent View
+    "TANLA.NS",         # Tanla Platforms
+    "MASTEK.NS",        # Mastek
+    "AURIONPRO.NS",     # Aurionpro Sol.
+    "RATEGAIN.NS",      # Rategain Travel
+    "MCLOUD.NS",        # Magellanic Cloud
+    "526433.BO",        # ASM Technologies
+    "63MOONS.NS"        # 63 Moons Tech.
+]
+
+
+
+it_hardware_symbols = [
+    "EBGNG.NS",       # GNG Electronics
+    "MOSCHIP.NS",     # Moschip Tech.
+    "NELCO.NS",       # NELCO
+    "RPTECH.NS",      # Rashi Peripheral
+    "DLINKINDIA.NS",  # D-Link India
+    "521238.BO",      # Bharat Global
+    "CONTROLPR.NS",   # Control Print
+    "TVSELECT.NS",    # TVS Elec.
+    "HCL-INSYS.NS",   # HCL Infosystems
+    "DCI.NS",         # DC Infotech
+    "ESCONET.NS",     # Esconet
+    "517246.BO",      # B C C Fuba India
+    "517393.BO",      # Vintron Info.
+    "SLONE.NS",       # Slone Infosys.
+    "SMARTLINK.NS"    # Smartlink Hold.
+]
+
+
+#######################################################################################################
+
+
+#######################################################################################################
+
+hospital_companies_symbols = [
+    "MAXHEALTH.NS",     # Max Healthcare
+    "APOLLOHOSP.NS",    # Apollo Hospitals
+    "FORTIS.NS",        # Fortis Health.
+    "MEDANTA.NS",       # Global Health
+    "NH.NS",            # Narayana Hrudaya
+    "ASTERDM.NS",       # Aster DM Health.
+    "KIMS.NS",          # Krishna Institu.
+    "RAINBOW.NS",       # Rainbow Child.
+    "AGARWALEYE.NS",    # Dr Agarwal's Hea
+    "HCG.NS",           # Health.Global
+    "JLHL.NS",          # Jupiter Life Lin
+    "YATHARTH.NS",      # Yatharth Hospit.
+    "KOVAI.NS",         # Kovai Medical
+    "INDRAMEDCO.NS",    # Indrapr.Medical
+    "ARTEMISMED.NS",    # Artemis Medicare
+    "SHALBY.NS",        # Shalby
+    "526783.BO",        # Dr Agarwal's Eye
+    "GPTHEALTH.NS",     # GPT Healthcare
+    "524520.BO",        # KMC Speciality
+    "531658.BO",        # Abate As Indust
+    "NEPHROCARE.NS",    # Nephro Care
+    "LOTUSEYE.NS",      # Lotus Eye Hospit
+    "UNIHEALTH.NS",     # Unihealth Hosp
+    "543346.BO",        # Aashka Hospitals
+]
+
+
+
+health_care_service_provider_symbols = [
+    "LALPATHLAB.NS",   # Dr Lal Pathlabs
+    "METROPOLIS.NS",   # Metropolis Healt
+    "VIJAYA.NS",       # Vijaya Diagnost.
+    "THYROCARE.NS",    # Thyrocare Tech.
+    "KRSNAA.NS",       # Krsnaa Diagnost.
+    "SURAKSHA.NS",     # Suraksha Diagno.
+    "532067.BO" ,      # 3B Blackbio
+]
+
+
+
+
+pharma_company_symbols = [
+    "SUNPHARMA.NS",     # Sun Pharma.Inds.
+    "DIVISLAB.NS",      # Divi's Lab.
+    "CIPLA.NS",         # Cipla
+    "TORNTPHARM.NS",    # Torrent Pharma.
+    "MANKIND.NS",       # Mankind Pharma
+    "DRREDDY.NS",       # Dr Reddy's Labs
+    "ZYDUSLIFE.NS",     # Zydus Lifesci.
+    "LUPIN.NS",         # Lupin
+    "ABBOTINDIA.NS",    # Abbott India
+    "ALKEM.NS",         # Alkem Lab
+    "AUROPHARMA.NS",    # Aurobindo Pharma
+    "GLENMARK.NS",      # Glenmark Pharma.
+    "BIOCON.NS",        # Biocon
+    "LAURUSLABS.NS",    # Laurus Labs
+    "GLAXO.NS",         # Glaxosmi. Pharma
+    "ANTHEM.NS",        # Anthem Bioscienc
+    "COHANCE.NS",       # Cohance Life
+    "IPCALAB.NS",       # Ipca Labs.
+    "AJANTPHARM.NS",    # Ajanta Pharma
+    "GLAND.NS",         # Gland Pharma
+    "JBCHEPHARM.NS",    # J B Chemicals &
+    "PPLPHARMA.NS",     # Piramal Pharma
+    "EMCURE.NS",        # Emcure Pharma
+    "ERIS.NS",          # ERIS Lifescience
+    "WOCKPHARMA.NS",    # Wockhardt
+    "PFIZER.NS",        # Pfizer
+    "ASTRAZEN.NS",      # Astrazeneca Phar
+    "ONESOURCE.NS",     # OneSource Speci.
+    "APLLTD.NS",        # Alembic Pharma
+    "NEULANDLAB.NS",    # Neuland Labs.
+    "CONCORDBIO.NS",    # Concord Biotech
+    "SAILIFE.NS",       # Sai Life
+    "JUBLPHARMA.NS",    # Jubilant Pharmo
+    "CAPLIPOINT.NS",    # Caplin Point Lab
+    "NATCOPHARM.NS",    # Natco Pharma
+    "GRANULES.NS",      # Granules India
+    "BLUEJET.NS",       # Blue Jet Health
+    "SANOFICONR.NS",    # Sanofi Consumer
+    "SANOFI.NS",        # Sanofi India
+    "ACUTAAS.NS",       # Acutaas Chemical
+    "ALIVUS.NS",        # Alivus Life
+    "PGHL.NS",          # P & G Health Ltd
+    "JSLL.NS",          # Jeena Sikho
+    "STAR.NS",          # Strides Pharma
+    "SHILPAMED.NS",     # Shilpa Medicare
+    "AARTIPHARM.NS",    # Aarti Pharma
+    "MARKSANS.NS",      # Marksans Pharma
+    "FDC.NS",           # FDC
+    "AKUMS.NS",         # Akums Drugs
+    "SUPRIYA.NS",       # Supriya Lifesci.
+]
+
+
+
+
+#######################################################################################################
+
+
+waste_management_symbols = [
+    "EMSLIMITED.NS",             # EMS
+    "AWHCL.NS",     # Antony Waste Handling
+    "530643.BS",          # Eco Recycling
+    "CEWATER.NS",        # Concord Enviro
+    "ZTECH.NS",           # Z-Tech (India)
+    "HIGREEN.NS",         # Hi-Green Carbon
+    "EFFWA.NS",           # Effwa Infra
+    "VVIPINFRA.NS",       # VVIP Infratech
+    "RACEECO.NS",         # Race Eco
+    "NAMOEWASTE.NS",      # Namo eWaste
+    "ORGANICREC.NS",      # Organic Recycling
+    "GEMENV.NS",          # Gem Enviro
+    "URBANENV.NS",        # Urban Enviro
+    "EPBIO.NS"            # EP Biocomposites
+]
+
+Water_Supply_Management_Companies_symbols = [
+    "WABAG.NS",         # Va Tech Wabag (NSE) – BSE: 533269 :contentReference[oaicite:0]{index=0}
+    "IONEXCHANG.NS",   # ION Exchange (NSE) – BSE: 500214 :contentReference[oaicite:1]{index=1}
+    "EIEL.NS",         # Enviro Infra Engineers (NSE) – BSE: 544290 :contentReference[oaicite:2]{index=2}
+    "DENTA.NS",        # Denta Water & Infra Solutions (NSE) – BSE: 544345 :contentReference[oaicite:3]{index=3}
+    "JITFINFRA.NS",    # JITF Infralogistics (NSE) – BSE: 540311 :contentReference[oaicite:4]{index=4}
+    "FELIX.NS",        # Felix Industries (NSE) – BSE: 535033 :contentReference[oaicite:5]{index=5}
+    "APEXECO.NS",      # Apex Ecotech (NSE) – BSE: not listed :contentReference[oaicite:6]{index=6}
+    "SATTVAENGG.NS",   # Sattva Engineering Construction (NSE) – no BSE listing :contentReference[oaicite:7]{index=7}
+]
+######################################################################################################
+
+
+METAL & MINING
+
+
+ferrous_metal_symbols = [
+    "JSWSTEEL.NS",         # JSW Steel
+    "TATASTEEL.NS",        # Tata Steel
+    "JINDALSTEL.NS",       # Jindal Steel
+    "JSL.NS",              # Jindal Stainless
+    "SAIL.NS",             # SAIL (Steel Authority of India)
+    "KIOCL.NS",            # KIOCL
+    "SARDAEN.NS",          # Sarda Energy
+    "NSLNISP.NS",          # NMDC Steel
+    "JAIBALAJI.NS",           # Jai Balaji Industries
+    "KIRLFER.NS",        # Kirloskar Ferrous
+    "IMFA.NS",             # Indian Metals
+    "MAITHANALL.NS",       # Maithan Alloys
+    "PRAKASH.NS",          # Prakash Industries
+    "MUKANDLTD.NS",           # Mukand
+    "OWAIS.NS",       # Owais Metal
+    "VRAJ.NS",         # Vraj Iron
+    "VISASTEEL.NS",        # Visa Steel
+    "MANAKSTEEL.NS",        # Manaksia Steels
+    "CMNL.NS",        # Chaman Metallics
+    "JAINAM.NS"         # Jainam Ferro
+]
+
+
+non_ferrous_metal_symbols = [
+    "HINDZINC.NS",     # Hindustan Zinc
+    "HINDALCO.NS",     # Hindalco Industries
+    "NALCO.NS",        # National Aluminium Co
+    "HINDCOPPER.NS"    # Hindustan Copper
+]
+
+
+metal_mineral_trading_symbols = [
+    "ADANIGREEN.NS",          # Adani Enterprises
+    "LLOYDSENT.NS",           # Lloyds Enterprises
+    "LSIND.BO",               # LS Industries
+    "MWL.NS",                 # Mangalam Worldwide
+    "NRL.NS",                 # Nupur Recyclers
+    "EMERGENT.BO",            # Emergent Industrial Solutions
+    "512165.BO",              # ABans Enterprises
+    "540492.BO"               # Starlineps Enterprises
+]
+
+
+mineral_mining_symbols = [
+    "LLOYDSME.NS",    # Lloyds Metals & Energy Ltd (NSE)
+    "NMDC.NS",         # NMDC Ltd (NSE)
+    "GMDCLTD.NS",         # Gujarat Mineral Development Corporation Ltd (NSE)
+    "GRAVITA.NS",      # Gravita India Ltd (NSE)
+    "MOIL.NS",         # MOIL Ltd (NSE)
+    "ASHAPURMIN.NS",  # Ashapura Minechem Ltd (NSE)
+    "ORISSAMINE.NS",       # Orissa Minerals Development Company Ltd (BSE code, NSE not listed)
+    "20MICRONS.NS",    # 20 Microns Ltd (NSE)
+    "530129.BO",         # NILE Ltd (NSE)
+    "PCCL.NS"       # Petro Carbon and Chemicals Ltd (BSE code, NSE not listed)
+]
+
+diversified_metal_symbols = [
+    "VEDL.NS",           # Vedanta Limited (NSE: VEDL)
+    "POCL.NS",           # Pondy Oxides and Chemicals Limited (NSE: POCL)
+    "INNOMET.NS"         # Innomet Advanced Materials Limited (NSE: INNOMET)
+]
+
+#####################################################################################################
+
+speicality_chemical_symbols = [
+    "PIDILITIND.NS",   # Pidilite Industries :contentReference[oaicite:0]{index=0}
+    "FLUOROCHEM.NS",  # Gujarat Fluorochemicals :contentReference[oaicite:1]{index=1}
+    "NAVINFLUOR.NS",  # Navin Fluorine International :contentReference[oaicite:2]{index=2}
+    "DEEPAKNTR.NS",   # Deepak Nitrite :contentReference[oaicite:3]{index=3}
+    "BASF.NS",        # BASF India :contentReference[oaicite:4]{index=4}
+    "ATUL.NS",        # Atul Ltd. :contentReference[oaicite:5]{index=5}
+    "VINATIORGA.NS",  # Vinati Organics :contentReference[oaicite:6]{index=6}
+    "FINEORG.NS",     # Fine Organic Industries :contentReference[oaicite:7]{index=7}
+    "AARTIIND.NS",    # Aarti Industries (Assumed NSE: AARTIIND)
+    "CLEAN.NS",    # Clean Science (Assumed NSE: CLNINDIA)
+    "ANURAS.NS",   # Anupam Rasayan (Assumed NSE: ANUPAMRAS)
+    "JUBLINGREA.NS",  # Jubilant Ingrevia (Assumed NSE: JUBLINOVEL)
+    "ALKYLAMINE.NS", # Alkyl Amines (Assumed NSE: ALKYLAMINES)
+    "AETHER.NS",      # Aether Industries (Assumed NSE)
+    "PRIVISCL.NS",   # Privi Speciality Chemicals (Assumed NSE)
+    "ACI.NS", # Archean Chemical
+    "500123.BO",     # Elantas Beck India (Assumed NSE)
+    "GALAXYSURF.NS",  # Galaxy Surfactants
+    "EPIGRAL.NS",     # Epigenerating (Epigral)
+    "LXCHEM.NS",   # Laxmi Organic Industries (Assumed NSE)
+    "BALAMINES.NS",   # Balaji Amines (Assumed NSE: BALAMINES)
+    "STYRENIX.NS",    # Styrenix Performance Chemicals
+    "JUBLCPL.NS",    # Jubilant Agri & Consumer Products (Assumed NSE: JUBLAGRI)
+    "FOSECOIND.NS",   # Foseco India (Assumed NSE: FOSECOIND)
+    "NEOGEN.NS",  # Neogen Chemicals (Assumed NSE: NEOGENCHEM)
+    "CAMLINFINE.NS",  # Camlin Fine Sciences (Assumed NSE: CAMLINFINE)
+    "SHK.NS",      # SH Kelkar & Co.
+    "ROSSARI.NS",  # Rossari Biotech (Assumed NSE: ROSSARIBIO)
+    "DDEVPLSTIK.NS",   # DDev Plastiks (Assumed NSE)
+    "VISHNU.NS"   # Vishnu Chemicals (Assumed NSE)
+]
+
+
+Commodity_Chemicals_Companies_symbols = [
+    "SRF.NS",            # SRF
+    "TATACHEM.NS",       # Tata Chemicals
+    "DEEPAKFERT.NS",     # Deepak Fertilisers
+    "GNFC.NS",           # GNFC
+    "CHEMPLASTS.NS",     # Chemplast Sanmar
+    "514440.BO",         # Blue Pearl Agri
+    "GHCL.NS",           # GHCL
+    "506854.BO",         # Tanfac Industries
+    "GUJALKALI.NS",      # Gujarat Alkalies
+    "GRAUWEIL.NS",         # Grauer & Weil
+    "TIRUMALCHM.NS",     # Thirumalai Chemicals
+    "JGCHEM.NS",         # J.G. Chemicals
+    "507753.BO",            # TGV Sraac
+    "IGPL.NS",        # IG Petrochemicals
+    "AMNPLST.NS",         # Amines & Plasticizers
+    "SRHHYPOLTD.NS",   # Sr. Rayala Hypo
+    "ANDHRSUGAR.NS",      # Andhra Sugars
+    "506808.BO",      # Tuticorin Alkali
+    "CHEMFAB.NS",        # Chemfab Alkalis
+    "INDOBORAX.NS",      # Indo Borax & Chemicals
+    "506687.BO",       # Transpek Industries
+    "POCL.NS",           # POCL Enterprises
+    "OCCLLTD.NS",           # OCCL
+    "PRIMO.NS",      # Primo Chemicals
+    "530477.BO",   # Vikram Thermo
+]
+
+
+fertilizer_symbols = [
+    "COROMANDEL.NS",       # Coromandel International
+    "FACT.NS",             # Fertilizers and Chemicals Travancore
+    "CHAMBLFERT.NS",       # Chambal Fertilisers & Chemicals
+    "PARADEEP.NS",         # Paradeep Phosphates
+    "RCF.NS",              # Rashtriya Chemicals & Fertilizers
+    "GSFC.NS",             # Gujarat State Fertilizers & Chemicals
+    "509732.BO",        # Kothari Industrial Corporation
+    "NFL.NS",              # National Fertilizers
+    "MANGCHEFER.NS",         # Mangalore Chemicals & Fertilizers
+    "MBAPL.NS",           # M B Agro Products
+    "KRISHANA.NS",         # Krishana Phoschem
+    "SPIC.NS",             # Southern Petrochemical Industries Corporation
+    "MADRASFERT.NS",          # Madras Fertilizers
+    "KHAICHEM.NS",      # Khaitan Chemicals & Fertilizers
+    "ZUARI.NS",        # Zuari Agro Chemicals
+    "ARIES.NS",        # Aries Agro
+    "RAMAPHO.NS",       # Rama Phosphates
+    "NOVAAGRI.NS",         # Nova Agritech
+    "BALAJIPHOS.NS",        # Balaji Phosphates
+    "NAGAFERT.NS",         # Nagarjuna Fertilizers & Chemicals
+]
+
+
+pesticide_agrochemical_symbols = [
+    "PIIND.NS",            # P I Industries
+    "UPL.NS",              # UPL
+    "SUMICHEM.NS",         # Sumitomo Chemical India
+    "BAYERCROP.NS",        # Bayer CropScience
+    "SHARDACROP.NS",       # Sharda Cropchem
+    "DHANUKA.NS",          # Dhanuka Agritech
+    "RALLIS.NS",           # Rallis India
+    "NACLIND.NS",          # NACL Industries
+    "BHARATRAS.NS",        # Bharat Rasayan
+    "BHAGCHEM.NS",         # Bhagiradha Chem
+    "IPL.NS",         # India Pesticides
+    "INSECTICID.NS",       # Insecticides India
+    "MOL.NS",         # Meghmani Organics
+    "ASTEC.NS",            # Astec Lifesciences
+    "PUNJABCHEM.NS",          # Punjab Chemicals
+    "HERANBA.NS",          # Heranba Industries
+    "DHARMAJ.NS",          # Dharmaj Crop Guard
+    "BESTAGRO.NS",         # Best Agrolife
+    "SHIVALIK.NS",          # Shivalik Rasayan
+    "IGCL.NS",         # Indo Gulf Fertilizers
+]
+
+
+chemical_symbols = [
+    "PIDILITIND.NS",       # Pidilite Industries
+    "SOLARINDS.NS",        # Solar Industries
+    "SRF.NS",              # SRF
+    "COROMANDEL.NS",       # Coromandel International
+    "FACT.NS",             # F A C T
+    "PIIND.NS",            # PI Industries
+    "LINDEINDIA.NS",       # Linde India
+    "UPL.NS",              # UPL
+    "FLUOROCHEM.NS",        # Gujarat Fluorochemicals
+    "SUMICHEM.NS",         # Sumitomo Chemicals India
+    "DEEPAKNTR.NS",        # Deepak Nitrite
+    "NAVINFLUOR.NS",       # Navin Fluorine International
+    "BAYERCROP.NS",        # Bayer Crop Science
+    "TATACHEM.NS",         # Tata Chemicals
+    "HSCL.NS",          # Himadri Speciality Chemical
+    "CHAMBLFERT.NS",          # Chambal Fertilisers
+    "BASF.NS",             # BASF India
+    "ATUL.NS",             # Atul Ltd
+    "PARADEEP.NS",         # Paradeep Phosphates
+    "VINATIORGA.NS",        # Vinati Organics
+    "DEEPAKFERT.NS",       # Deepak Fertilisers
+    "FINEORG.NS",          # Fine Organic
+    "SUPREME.NS",          # Supreme Petrochem
+    "PCBL.NS",             # PCBL Chemical
+    "SWANENERGY.NS",       # Swan Energy
+    "AARTIIND.NS",         # Aarti Industries
+    "CLEAN.NS",              # Clean Science
+    "ANURAS.NS",           # Anupam Rasayan
+    "SUDARSCHEM.NS",       # Sudarshan Chemical
+    "JUBLINGREA.NS"          # Jubilant Ingrevia
+]
+
+######################################################################################################
+
+
+
+
+Trading_Distributors_companies_symbols = [
+    "REDINGTON.NS",   # Redington
+    "MMTC.NS",        # MMTC
+    "MSTCLTD.NS",     # MSTC
+    "526125.BO",      # BN Holdings
+    "512038.BO",      # TCC Concept
+    "VINCOFE.NS",     # Vintage Coffee & Beverages
+    "535001.BO",      # Polo Queen Industrial and Fintech
+    "540980.BO",      # Yamuna Syndicate
+    "500317.BO",      # Oswal Agro Mills
+    "512229.BO",      # Veritas (India)
+    "CREATIVE.NS",    # Creative Newtech
+    "STCINDIA.NS",    # The State Trading Corporation of India (STC)
+    "540730.BO",      # Mehai Technology
+    "KOTHARIPRO.NS",  # Kothari Products
+    "539834.BO",      # Balgopal Commercial
+    "VIKASLIFE.NS",   # Vikas Lifecare
+    "SHIVAUM.NS",     # Shiv Aum Steels
+    "524480.BO",      # Riddhi Siddhi Gluco Biols
+    "SAKUMA.NS",      # Sakuma Exports
+    "512593.BO",      # Spacenet Enterprises India
+    "543515.BO",      # Sunrise Efficient Marketing
+    "541729.BO",      # Northern Spirits
+    "SICAGEN.NS",     # Sicagen India
+    "540570.BO",      # Variman Global Enterprises
+    "ANIKINDS.NS",    # Anik Industries
+    "542694.BO",      # Parshva Enterprises
+    "HPTL.NS",        # HP Telecom
+    "530495.BO",      # Stratmont Industries
+    "EXCEL.NS",       # Excel Realty N Infra
+    "ESSENTIA.NS"     # Integra Essentia
+]
+
+
+
+Diversified_Commercial_Services_Companies_symbols = [
+    "IGPL.NS",         # International Conveyors (likely International Ge)
+    "NESCO.NS",        # NESCO Ltd.
+    "CMSINFO.NS",      # CMS Info Systems
+    "SMARTWORKS.NS",    # Smartworks Coworking Spaces
+    "HEMIPROP.NS",     # Hemisphere Properties India
+    "500307.BO",       # Nirlon Ltd. (BSE only)
+    "INDIQUBE.NS",     # Indiqube Spaces
+    "NDRINVIT.NS",    # NDR INVIT Trust
+    "AWFIS.NS",        # Awfis Space Solutions
+    "QUESS.NS",        # Quess Corp
+    "EFCIL.NS",          # EFC (India)
+    "TEAMLEASE.NS",    # TeamLease Services
+    "SANGHVIMOV.NS",   # Sanghvi Movers
+    "UDS.NS",      # Updater Services
+    "TEXINFRA.NS",     # Texmaco Infrastructure
+    "BLUSPRING.NS",    # Bluspring Enterprises (BSE only)
+    "KRYSTAL.NS",      # Krystal Integrated Services
+    "512014.BO",     # Sobhagya Mercantile (BSE only)
+    "512025.BO",     # Banganga Paper (BSE only)
+    "RADIANTCMS.NS",   # Radiant Cash Management Services
+    "TARACHAND.NS",    # Tara Chand Infra (BSE only)
+    "531537.BO",       # Mizzen Ventures (BSE only)
+    "PTL.NS",          # PTL Enterprises
+    "KAPSTON.NS",      # Kapston Services
+    "INFOLLION.NS",    # Infollion Research
+    "SOUTHWEST.BO",    # South West Pinnacle Exploration (BSE only)
+    "VIESL.NS",    # Vision Infra (BSE only)
+    "RBMINFRA.NS",     # RBM Infracon (BSE only)
+    "IEL.NS", # Indiabulls Enterprises
+    "ALANKIT.NS"       # Alankit Ltd.
+]
+
+
+
+######################################################################################################
+
+FMCG
+agricultural food and others
+
+
+
+
+oil_stocks = [
+    "MARICO.NS",           # Marico (NSE ticker MRCO) :contentReference[oaicite:0]{index=0}
+    "PATANJALI.NS",     # Patanjali Foods (NSE ticker PATANJALI) :contentReference[oaicite:1]{index=1}
+    "AWL.NS",           # AWL Agri Business (NSE ticker AWL) :contentReference[oaicite:2]{index=2}
+    "GOKULAGRO.NS",     # Gokul Agro Resources (NSE ticker GOKULAGRO) :contentReference[oaicite:3]{index=3}
+    "SUNDROP.NS",       # Sundrop Brands (NSE ticker SUNDROP) :contentReference[oaicite:4]{index=4}
+    "519477.BO",      # CIAN Agro (not listed on NSE; BSE code 519477) :contentReference[oaicite:5]{index=5}
+    "KNAGRI.NS",        # KN Agri Resource (NSE ticker KNAGRI) :contentReference[oaicite:6]{index=6}
+    "543373.BO",          # Shri Venkatesh Refineries (no NSE, BSE code 543373; ticker SVRL) :contentReference[oaicite:7]{index=7}
+    "KRITINUT.NS",      # Kriti Nutrients (NSE ticker KRITINUT) :contentReference[oaicite:8]{index=8}
+    "GOKUL.NS",         # Gokul Refoils & Solvent (NSE ticker GOKUL is used on NSE, but preference is NSE; listed both) :contentReference[oaicite:9]{index=9}
+    "519216.BO",    # Ajanta Soya (not on NSE; BSE code 519216) :contentReference[oaicite:10]{index=10}
+    "RBS.NS",           # Ramdevbaba Solvent (NSE ticker RBS) :contentReference[oaicite:11]{index=11}
+    "531069.BO",       # Vijay Solvex (no NSE, BSE code 531069; Yahoo code VIJSOLX.BO) :contentReference[oaicite:12]{index=12}
+    "MKPL.NS",          # M K Proteins (NSE ticker MKPL) :contentReference[oaicite:13]{index=13}
+    "519471.BO",      # Ambar Protein (no NSE; BSE code 519471; ticker AMBARPIL.BO) :contentReference[oaicite:14]{index=14}
+]
+
+
+
+
+
+other_agricultural_product_symbol =[
+"LTFOODS.NS",       # L T Foods — NSE ticker LTFOODS :contentReference[oaicite:0]{index=0}
+"KRBL.NS",          # KRBL — NSE ticker KRBL :contentReference[oaicite:1]{index=1}
+"KSCL.NS",          # Kaveri Seed Co. — NSE ticker KSCL :contentReference[oaicite:2]{index=2}
+"GAEL.NS",         # Guj. Ambuja Exp — NSE listing not found; BSE code unavailable in sources (couldn’t locate); marked as BSE placeholder
+"GRMOVER.NS",       # GRM Overseas — NSE ticker GRMOVER :contentReference[oaicite:3]{index=3}
+"SANSTAR.NS",       # Sanstar — no NSE listing found; BSE code not found in sources (marked as placeholder)
+"CLSEL.NS",        # Chamanlal Setia — NSE listing not found; BSE code not found (placeholder)
+"BSHSL.NS",        # Bombay Super Hyb — NSE listing not found; BSE code not found (placeholder)
+"AVTNPL.NS",        # AVT Natural Prod — NSE ticker AVTNPL :contentReference[oaicite:4]{index=4}
+"REGAAL.NS",        # Regaal Resources — NSE ticker REGAAL :contentReference[oaicite:5]{index=5}
+
+]
+
+
+sugar_symbols =[
+"BALRAMCHIN.NS",    # Balrampur Chini Mills — NSE ticker BALRAMCHIN (also BSE code 500038) :contentReference[oaicite:0]{index=0}
+"TRIVENI.NS",       # Triveni Engineering & Industries — NSE ticker TRIVENI (BSE code: 532356) :contentReference[oaicite:1]{index=1}
+"RENUKA.NS",          # Shree Renuka Sugars — NSE ticker RENUKA (commonly also referred to as SRES) :contentReference[oaicite:2]{index=2}
+  "BANARISUG.NS", # - Bannari Ammann Sugars
+"DALMIASUG.NS", # - Dalmia Bharat
+"BAJAJHIND.NS", # - Bajaj Hindusthan
+"DCMSRIND.NS", # - DCM Shriram Industries
+"UTTAMSUGAR.NS", # - Uttam Sugar Mills
+"AVADHSUGAR.NS", # - Avadh Sugar
+"DHAMPURSUG.NS", # - Dhampur Sugar
+"ZUARIIND.NS", # - Zuari Industries
+"DWARKESH.NS", # - Dwarikesh Sugar
+"MAGADSUGAR.NS", # - Magadh Sugar
+"MVKAGRO.NS" # - M.V.K. Agro
+]
+
+
+
+tea_coffee_symbols = [
+"TATACONSUM.NS",   # Tata Consumer (NSE ticker TATACONSUM) :contentReference[oaicite:0]{index=0}
+"CCL.NS",          # CCL Products (NSE ticker CCL) :contentReference[oaicite:1]{index=1}
+"ANDREWYU.NS",     # Andrew Yule & Co (NSE ticker ANDREWYU; BSE: 526173) :contentReference[oaicite:2]{index=2}
+"500166.BO",    # Goodricke Group (NSE ticker GOODRICKE; BSE: 500166) :contentReference[oaicite:3]{index=3}
+"MCLEODRUSS.NS",   # McLeod Russel (NSE ticker MCLEODRUSS; BSE: 532654) :contentReference[oaicite:4]{index=4}
+"JAYSREETEA.NS",   # Jay Shree Tea & Industries (NSE ticker JAYSREETEA; BSE: 509715) :contentReference[oaicite:5]{index=5}
+"GILLANDERS.NS",   # Gillanders Arbuthnot & Co (NSE ticker GILLANDERS; BSE: 532716) :contentReference[oaicite:6]{index=6}
+"ROSSELLIND.NS",   # Rossell India (NSE ticker ROSSELLIND; BSE: 533168) :contentReference[oaicite:7]{index=7}
+"PKTEA.NS",         # Peria Karamalai Tea & Produce Company Ltd    
+"UNITEDTEA>NS"    # "United Nilgiri Tea Estates Company Ltd"
+]
+
+
+
+
+
+FMCG -> Bevarages
+
+
+
+
+
+
+Bevarages_symbols = [
+    "VBL.NS",           # Varun Beverages — NSE ticker VBL :contentReference[oaicite:0]{index=0}
+    "UNITDSPR.NS",        # United Spirits — NSE ticker UNITS :contentReference[oaicite:1]{index=1}  *(common abbreviation)*
+    "UBL.NS",          # United Breweries — NSE ticker UBL *(commonly used)*
+    "RADICO.NS",       # Radico Khaitan — NSE ticker RADICO *(commonly used)*
+    "ABDL.NS",     # Allied Blenders & Distillers — NSE ticker ALLIEDBL
+    "TIL.NS",          # Tilaknagar Industries — NSE ticker TIL *(commonly used)*
+    "PICCADIL.NS",    # Piccadily Agro Industries — NSE ticker PICCADILY
+    "INDIAGLYCO.NS",   # India Glycols — NSE ticker INDIAGLYCO :contentReference[oaicite:2]{index=2}
+    "GLOBUSSPR.NS",   # Globus Spirits — NSE ticker GLOBUSSPIR
+    "SDBL.NS",   # Som Distilleries & Breweries — NSE ticker SOMDISTILL
+    "SULA.NS",      # Sula Vineyards — NSE ticker SULAVIN
+    "ASALCBR.NS",    # Associated Alcohols & Breweries — NSE ticker ASSOCALCO
+    "GMBREW.NS",  # G M Breweries — NSE ticker GMBREWERIES
+    "BCLIND.NS",       # BCL Industries — NSE ticker BCLIND
+    "507155.BO",      # Jagatjit Industries — NSE ticker JAGAJIT
+    "IFBAGRO.NS",       # IFB Agro Industries — NSE ticker IFBAGO *(assuming "IFBAGO")*
+    "544451.BO",       # Monika Alcobev — NSE ticker MONIKA
+    "541741.BO",     # Fratelli Vineyards — NSE ticker FRATELLI
+    "CUPID.NS",        # Cupid Breweries — NSE ticker CUPID *(if listed)*
+    "531216.BO",      # Comfort Intech — NSE ticker COMFORT
+    "539546.BO"       # Agribio Spirits — NSE ticker AGRIBIO
+]
+
+
+
+
+
+
+
+axis bank 
+
+    "CENTRALBK.NS",    # Central Bank of India
+    "PSB.NS"           # Punjab & Sind Bank
+        "IOB.NS",          # Indian Overseas Bank
+            "UNIONBANK.NS",    # Union Bank of India
+
+                "MAHABANK.NS",     # Bank of Maharashtra
+    "UCOBANK.NS",      # UCO Bank
+
+
+micro finance entire stock down
+
+
+
+
+    "SANGHVIMOV.NS",   # Sanghvi Movers
+
+
+
+
+
+
+
+    {"schemeCode":112957,"schemeName":"ICICI Prudential Nifty Next 50 Index Fund - Growth","isinGrowth":"INF109K01IF1","isinDivReinvestment":null},
+
+    ,"scheme_code":149281,"scheme_name":"ICICI Prudential Nifty Smallcap 250 Index Fund - Growth"
+
+    uti_nifty50_code = "120716"   # UTI Nifty 50 Index Fund - Direct Plan - Growth
+
+    {"schemeCode":147621,"schemeName":"Motilal Oswal Nifty Midcap 150 Index Fund - Regular Plan","isinGrowt
+
+    {"schemeCode":147665,"schemeName":"Axis Nifty 100 Index Fund - Regular Plan - Growth Option","isinGrowth":"INF846K01S52","isinDivReinvestment":null}
+
+    {"schemeCode":151814,"schemeName":"Motilal Oswal Nifty Microcap 250 Index Fund- Direct- Growth Option","isinGrowth":"INF247L01BQ9","isinDivReinvestment":null}
+
+
+    {"schemeCode":152429,"schemeName":"HDFC NIFTY200 Momentum 30 Index Fund - Regular Plan","isinGrowth":"INF179KC1IB6","isinDivReinvestment":null}
+
+
+    ,{"schemeCode":152455,"schemeName":"Mirae Asset Nifty Smallcap 250 Momentum Quality 100 ETF","isinGrowth":"INF769K01LC3","isinDivReinvestment":null}    
+
+    {"schemeCode":152457,"schemeName":"Mirae Asset Nifty Smallcap 250 Momentum Quality 100 ETF Fund of Fund - Regular Plan - Growth","isinGrowth":"INF769K01LD1","isinDivReinvestment":null}
+
+    {"schemeCode":152458,"schemeName":"Mirae Asset Nifty Smallcap 250 Momentum Quality 100 ETF Fund of Fund - Regular Plan - IDCW","isinGrowth":"INF769K01LE9","isinDivReinvestment":"INF769K01LF6"},{"schemeCode":152459,"schemeName":"Mirae Asset Nifty Smallcap 250 Momentum Quality 100 ETF Fund of Fund - Direct Plan - Growth","isinGrowth":"INF769K01LG4","isinDivReinvestment":null},
+
+
+    {"schemeCode":152645,"schemeName":"Mirae Asset Nifty MidSmallcap400 Momentum Quality 100 ETF Fund of Fund - Direct Plan - Growth","isinGrowth":"INF769K01LN0","isinDivReinvestment":null},{"schemeCode":152646,"schemeName":"Mirae Asset Nifty MidSmallcap400 Momentum Quality 100 ETF Fund of Fund - Direct Plan - IDCW","isinGrowth":"INF769K01LO8","isinDivReinvestment":"INF769K01LP5"},{"schemeCode":152647,"schemeName":"Mirae Asset Nifty MidSmallcap400 Momentum Quality 100 ETF Fund of Fund - Regular Plan - Growth","isinGrowth":"INF769K01LK6","isinDivReinvestment":null},{"schemeCode":152648,"schemeName":"Mirae Asset Nifty MidSmallcap400 Momentum Quality 100 ETF Fund of Fund - Regular Plan - IDCW","isinGrowth":"INF769K01LL4","isinDivReinvestment":"INF769K01LM2"}
+
+
+
+    {"schemeCode":152882,"schemeName":"Nippon India Nifty 500 Momentum 50 Index Fund - Regular Plan - IDCW Option","isinGrowth":"INF204KC1DE0","isinDivReinvestment":"INF204KC1DF7"},{"schemeCode":152883,"schemeName":"Nippon India Nifty 500 Momentum 50 Index Fund - Regular Plan - Growth Option","isinGrowth":"INF204KC1DD2","isinDivReinvestment":null},{"schemeCode":152884,"schemeName":"Nippon India Nifty 500 Momentum 50 Index Fund - Direct Plan - IDCW Option","isinGrowth":"INF204KC1DH3","isinDivReinvestment":"INF204KC1DI1"}
+
+
+    {"schemeCode":152981,"schemeName":"Edelweiss Nifty500 Multicap Momentum Quality 50 ETF - Growth","isinGrowth":"INF754K01TF1","isinDivReinvestment":null},{"schemeCode":152982,"schemeName":"Edelweiss Nifty500 Multicap Momentum Quality 50 Index Fund - Direct - IDCW - Payout","isinGrowth":"INF754K01TG9","isinDivReinvestment":"INF754K01TH7"},{"schemeCode":152983,"schemeName":"Edelweiss Nifty500 Multicap Momentum Quality 50 Index Fund - Regular - IDCW - Payout","isinGrowth":"INF754K01TK1","isinDivReinvestment":"INF754K01TL9"},{"schemeCode":152985,"schemeName":"Edelweiss Nifty500 Multicap Momentum Quality 50 Index Fund - Direct - Growth","isinGrowth":"INF754K01TN5","isinDivReinvestment":null}
+
+    Option","isinGrowth":"INF251K01UB5","isinDivReinvestment":null},{"schemeCode":153002,"schemeName":"Bandhan Nifty 500 Momentum 50 Index Fund Regular Plan-Growth","isinGrowth":"INF194KB1IX2","isinDivReinvestment":null},{"schemeCode":153003,"schemeName":"Bandhan Nifty 500 Momentum 50 Index Fund Direct Plan-
+
+
+    },{"schemeCode":153271,"schemeName":"UTI Nifty India Manufacturing Index Fund - Regular Plan - Growth Option","isinGrowth":"INF789F1AB30","isinDivReinvestment":null},{"schemeCode":153272,"schemeName":"UTI Nifty Midsmallcap 400 Momentum Quality 100 Index Fund - Direct Plan - Growth Option","isinGrowth":"INF789F1AB22","isinDivReinvestment":null},{"schemeCode":153273,"schemeName":"UTI Nifty Midsmallcap 400 Momentum Quality 100 Index Fund - Regular Plan - Growth Option","isinGrowth":"INF789F1AB06","isinDivReinvestment":null}

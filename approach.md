@@ -24,23 +24,3 @@ googliness
 https://leetcode.com/discuss/post/5963463/googlyness-frequently-asked-questions-by-55sh/
 
 https://medium.com/@poojaauma/the-behavioral-questions-that-helped-me-in-my-googlyness-round-6c41433ea5dd
-
-
-Tell me about one of the biggest accomplishments in your career so far.
-
-
--> check the fit tracking code()
-
-
-USER=>admin, HOME=>/%USER%/home, HOUSE => /%HOME%END
-
-a->b->c->a => but there is no %a% or %b% or %c% in the input, then 
-
-
-
-input = ...%USER% ... %HOME% ... %HOUSE%...
-
-start with recursion(input) => when we find some string T in input as %T% then =>
- => call recursion(T) => 
-check if the key exit in the dictionary => No => return -1
-=> YES => 

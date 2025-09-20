@@ -133,3 +133,80 @@ int main() {
     for (const auto& s : v)
         std::cout << s << " ";
 }
+
+
+
+##############################
+
+
+find T exists in S as a substring or not
+
+
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+// Function to build LPS (Longest Prefix Suffix) array
+vector<int> buildLPS(const string &pattern) {
+    int m = pattern.size();
+    vector<int> lps(m, 0); // lps[i] = longest proper prefix which is also suffix for pattern[0..i]
+    int len = 0; // length of the previous longest prefix suffix
+
+    // i starts from 1 (lps[0] is always 0)
+    for (int i = 1; i < m; ) {
+        if (pattern[i] == pattern[len]) {
+            len++;
+            lps[i] = len;
+            i++;
+        } else {
+            if (len != 0) {
+                len = lps[len - 1]; // try to extend previous lps
+            } else {
+                lps[i] = 0;
+                i++;
+            }
+        }
+    }
+    return lps;
+}
+
+// KMP Search: returns true if pattern exists in text
+bool KMP_Search(const string &text, const string &pattern) {
+    int n = text.size();
+    int m = pattern.size();
+    if (m == 0) return true; // Empty pattern matches everywhere
+    if (n < m) return false; // Pattern longer than text
+
+    vector<int> lps = buildLPS(pattern);
+
+    int i = 0, j = 0; // i -> text, j -> pattern
+    while (i < n) {
+        if (text[i] == pattern[j]) {
+            i++;
+            j++;
+            if (j == m) return true; // full match found
+        } else {
+            if (j != 0) {
+                j = lps[j - 1]; // Use LPS to skip characters
+            } else {
+                i++; // No prefix matched yet, just advance text
+            }
+        }
+    }
+    return false; // No match found
+}
+
+// Example usage
+int main() {
+    string S = "ababcababcabc";
+    string T = "ababcabc";
+
+    if (KMP_Search(S, T)) {
+        cout << "Pattern T exists in S." << endl;
+    } else {
+        cout << "Pattern T does not exist in S." << endl;
+    }
+
+    return 0;
+}
