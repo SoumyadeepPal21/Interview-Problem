@@ -1,3 +1,5 @@
+// https://leetcode.com/discuss/post/6647864/another-google-l3-post-not-what-i-expect-wq86/
+
 // Given on-call rotation schedule for multiple people by: their name, start time and end time of the rotation:
 
 // Abby 1 10
@@ -44,7 +46,9 @@ void fun(vector<Person> meetings) {
 		events.push_back(e1);
 		events.push_back(e2);
 	}
-	sort(events.begin(), events.end());
+	sort(events.begin(), events.end(), [&](Event e1, Event e2) {
+		return e1.time < e2.time;
+	});
 	// avaibale people
 	int lastEventTime = 0;
 	unordered_set<string> people;

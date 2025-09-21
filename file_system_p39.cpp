@@ -1,20 +1,20 @@
-reate a python class for implementing directory structure, to store the file in file system
-	incorporate the file size as well and given a folder name or file name, i should be able to tell the total size of it.
-	mplement delete feature
+// create a python class for implementing directory structure, to store the file in file system
+// incorporate the file size as well and given a folder name or file name, i should be able to tell the total size of it.
+// mplement delete feature
 
-	struct Directory {
+struct Directory {
 public:
-		Directory(string name) {
-				this->name = name;
-			}
-			~Directory() {
-				for (auto dir : root->subDirectories) delete dir;
-			}
-			string name;
-			int size;
-			vector<string> fileNames;
-			unordered_map<string, Directory*> subDirectories;
-		};
+	Directory(string name) {
+		this->name = name;
+	}
+	~Directory() {
+		for (auto dir : root->subDirectories) delete dir;
+	}
+	string name;
+	int size;
+	vector<string> fileNames;
+	unordered_map<string, Directory*> subDirectories;
+};
 
 / home / test / a.txt
 
@@ -92,26 +92,3 @@ public:
 
 
 
-words = [word1, ..., word_n]
-
-        find number of pairs (i, j) such that i < j and word_i and word_j is buddy strings
-
-
-
-        ab, de => buddy
-        ab, def => non buddy
-
-
-        length => 1, any pair is a buddy string
-
-
-
-        abc, def => buddy
-
-
-        abc => zcb => non buddy
-
-        abc => (b - a), (c - b) => 1, 1 => hash => abc => "1, 1"
-
-
-        zbc => (b - z), (c - b) => 2, 1 => has Zbc =>

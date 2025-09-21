@@ -10,7 +10,7 @@ public:
 		map<string, int> color;
 		function<string(const string&)> processText = [&](const string & str) -> string {
 			if (str.length() == 0) return "";
-			if (cache.find(str) != cache.end()) return cache;
+			if (cache.find(str) != cache.end()) return cache[str];
 			if (color[str] == 1) {
 				return INVALID_INPUT;
 			}
@@ -39,22 +39,21 @@ public:
 			// Construct the result: prefix + processed replacement + recursively process suffix
 			if (replacementValue == INVALID_INPUT) return replacementValue;
 			if (processText(str.substr(endPos + 1)) == INVALID_INPUT) return INVALID_INPUT;
-			cache[str] = str.substr(0, startPos) +
-			replacementValue +
-			processText(str.substr(endPos + 1));
+			cache[str] = str.substr(0, startPos) + replacementValue + processText(str.substr(endPos + 1));
 			color[str] = 2;
 			return cache[str];
 		};
 
 		// Start processing from the input text
-		for (auto [key, val] : dictionary) {
-			processText(val);
-		}
+		for (auto [key, val] : dictionary)
+			if (processText(val) == INVALID_INPUT)
+				return INVALID_INPUT;
+
 		return processText(text);
 	}
 };
 
-
+assumption => the key does not have any %
 
 
 ask the question if a cycle like a->b->c->a exists, but any of a, b, c is used not in process of replacement process,
@@ -62,3 +61,26 @@ ask the question if a cycle like a->b->c->a exists, but any of a, b, c is used n
 
 
 
+
+    keys a->b->c->d->e->........
+
+    text is dependent on a, then worst case the the
+
+
+	    time and space complexity->
+
+
+	    text = gakfhgdks % a % aslgkfvddslhggajgbkjs
+
+
+	           a -> L =>  8L     => 1 => 8L => N * L
+	           b      c     => 4L    => 2 => 8L
+	           d     e   f   g   => 2L   => 4 => 8L
+	           ...     ... ... ....  => L    => 8 => 8L
+
+
+	           N * L * LOG(N)
+
+		           N * L =>
+		           A => xy % B % z
+		           B => ab % A % B
