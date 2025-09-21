@@ -1,5 +1,7 @@
 // Technical 3:
 
+// https://leetcode.com/discuss/post/6647864/another-google-l3-post-not-what-i-expect-wq86/
+
 // Given a sequence of digits of size S, return the subsequence that represents the largest possible number of size K that could be formed from the sequence maintaining the input order.
 // Follow-up : asked for a different approach with same time complexity and discussed both.
 #include <bits/stdc++.h>
@@ -10,6 +12,7 @@ int main() {
 	string s; cin >> s;
 	int k; cin >> k;
 	int n = s.length();
+
 	// pos[i] contains all the position of the digit 'i'
 	deque<int> pos[10];
 	for (int i = 0; i < n; i++) {
@@ -24,7 +27,7 @@ int main() {
 				pos[dig].pop_front();
 			}
 		}
-		int nextPos;
+		int nextPos = -1;
 		for (int dig = 9; dig >= 0; dig--) {
 			if (pos[dig].empty()) continue;
 			int takenDigits = i;
