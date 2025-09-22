@@ -14,13 +14,22 @@ private:
 		return (26 + (int)(a - 'a') - (int)(b - 'a'));
 	}
 
-	string createHash(const string& word) {
+	string createStringHash(const string& word) {
 		string hash = "";
 		for (int i = 1; i < word.size(); i++) {
 			int dis = findDis(word[i], word[i - 1]);
 			hash += toString(dis) + ",";
 		}
 		return hash;
+	}
+
+	string createIntHash(const string word, int radix, int mod) {
+		int hash = 0;
+		for (int i = 1; i < word.size(); i++) {
+			int dis = findDis(word[i], word[i - 1]);
+			hash = (1LL * hash * radix + dis) % mod;
+		}
+		return to_string(hash);
 	}
 public:
 	long long countBuddyString(vector<string> &words) {
@@ -34,7 +43,10 @@ public:
 				ans += oneLengthWord;
 				oneLengthWord++;
 			} else {
-				string hash = createHash(words[i]);
+				string hash = createStringHash(words[i]);
+				// string hash1 = createIntHash(word[i], 11, 1e9 + 7);
+				// string hash2 = createIntHash(word[i], 13, 1e9 + 33);
+				// string hash = hash1 + "_" + hash2;
 				ans += hashMap[hash];
 				hashMap[hash]++;
 			}
@@ -42,3 +54,6 @@ public:
 		return ans;
 	}
 };
+
+
+space complexity: O(N * L) => string hash, O(N) => integer hashing
