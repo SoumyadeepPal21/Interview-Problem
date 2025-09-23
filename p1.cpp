@@ -46,7 +46,7 @@ int main() {
 			ans.push_back(ch);
 		} else if (cnt < 0) {
 			ans += "-";
-			if (cnt > 1)
+			if (cnt < -1)
 				ans += to_string(cnt);
 			ans.push_back(ch);
 		}
