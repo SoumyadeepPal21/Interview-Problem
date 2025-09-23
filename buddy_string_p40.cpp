@@ -57,3 +57,50 @@ public:
 
 
 space complexity: O(N * L) => string hash, O(N) => integer hashing
+
+// 0 based node (0 .... N - 1)
+// parent[i] = the parent of node i
+// parent[root] = -1
+
+
+
+// for each node, we will calculate how many children they have
+// if no children, => leaf node
+
+
+// if par[i] = x, then children[x]++;
+
+
+// say node y is a leaf node, then if we remove y, then we can children[par[y]]--;
+// in this process, par[y] can become a leaf node, if
+
+vector<vector<int>> removeLeafNodesInOrder(vector<int> &parent) {
+	int n = parent.size();
+	vector<int> children(n);
+	for (int i = 0; i < n; i++) {
+		if (parent[i] != -1) {
+			children[parent[i]]++;
+		}
+	}
+
+	queue<int> leaves;
+	for (int i = 0; i < n; i++) {
+		if (children[i] == 0) {
+			leaves.push_back(i);
+		}
+	}
+	vector<vector<int>> leavesInOrder;
+	while (!leaves.empty()) {
+		int Sz = leaves.size();
+		vector<int> curLeaves;
+		for (int i = 0; i < Sz; i++) {
+			int leaf = leaves[i];
+			curLeaves.push_back(leaf);
+			if (parent[leaf] != -1 && --children[parent[leaf]] == 0) {
+				leaves.push(parent[leaf]);
+			}
+		}
+		leavesInOrder.push_back(curLeaves);
+	}
+	return leavesInOrder;
+}

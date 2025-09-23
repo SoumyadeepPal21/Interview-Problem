@@ -32,6 +32,7 @@ int main() {
 		} else if (s[i] == ')') {
 			neg -= stk.top();
 			stk.pop();
+			lastSign = 1;
 		} else {
 			freq[s[i]] += (lastSign * ((neg % 2) ? -1 : 1));
 		}
