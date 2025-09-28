@@ -1,0 +1,237 @@
+https://leetcode.com/discuss/post/6185127/2024-google-interview-questions-compilat-mjrf/
+
+
+itsme comment:
+
+
+
+
+
+
+
+
+
+
+https://leetcode.com/discuss/post/6386506/google-l3-phone-screen-by-anonymous_user-gjax/
+
+second one I thought of hashing, but greedy two pointer solution exists(check the reply of first comment)
+
+first problem doable
+
+
+
+
+
+https://leetcode.com/discuss/post/6381275/google-l4-phone-screen-by-anonymous_user-ript/
+
+the above is string version, doable
+harder version is https://leetcode.com/problems/maximum-width-ramp/submissions/1780539048/
+
+
+
+
+
+
+https://leetcode.com/discuss/post/6375708/google-interview-question-phone-screen-5-etdn/
+
+doable -> create next[s.length()][26] vector and then try to find if a string from list is a subsequence or not
+
+
+
+https://leetcode.com/discuss/post/6355995/google-l3-interview-experience-ghosted-b-f2ed/
+
+
+
+
+https://leetcode.com/discuss/post/6355995/google-l3-interview-experience-ghosted-b-f2ed/
+
+repeated, two solution, O(N * N) create graph/ O(N * D) solution with deque
+
+
+
+https://leetcode.com/discuss/post/6349651/google-l5-bangalore-selected-interview-e-3wj2/
+
+onsite 3 doable
+onsite: 2 https://leetcode.com/discuss/post/416316/google-onsite-software-engineer-huffman-f1zfq/
+
+huffman coding, decoding
+seach here: https://leetcode.com/discuss/post/1402757/conclude-greedy-with-baba-by-baba_rude-83as/
+
+
+
+
+
+
+https://leetcode.com/discuss/post/6297699/google-sde-phone-screening-round-1-quest-35ve/
+
+greedy, observation problem, check  the first comment
+
+
+
+
+
+https://leetcode.com/discuss/post/6294044/google-phone-screen-by-anonymous_user-9egl/
+
+repeated regular expression problem a + (b - c) - c = a + b - 2 * c
+
+
+
+
+
+https://leetcode.com/discuss/post/6271208/google-l4-technical-screen-us-by-anonymo-531m/
+
+
+doable with stack, for two pointer check sagar vaiya comment
+
+
+
+
+https://leetcode.com/discuss/post/6257082/google-phone-interview-l3-munich-germany-w3rw/
+
+
+repeated, good dp problem
+
+
+
+
+
+https://leetcode.com/discuss/post/6249772/google-l3-phone-screen-waiting-by-anonym-pmrx/
+
+similar to https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/
+
+
+
+
+
+
+
+
+
+
+https://leetcode.com/discuss/post/6245697/google-l4-phone-screen-by-anonymous_user-ymt7/
+
+good greedy problem
+https://leetcode.com/problems/sum-of-mutated-array-closest-to-target/description/
+
+
+
+
+
+
+
+
+https://leetcode.com/discuss/post/6245510/phone-screen-round-by-anonymous_user-8b15/
+
+similar to https://leetcode.com/problems/text-justification/description/
+
+
+
+
+
+
+https://leetcode.com/discuss/post/6244752/google-l3-interview-experience-questions-2utz/
+
+repeated android pattern 
+https://github.com/SoumyadeepPal21/Interview-Problem/blob/main/android_pattern_p44.cpp
+
+
+
+
+
+https://leetcode.com/discuss/post/6207174/google-l5-video-screen-by-anonymous_user-gjrc/
+
+first problem: https://www.geeksforgeeks.org/problems/number-of-distinct-islands/1 (dfs + observation)
+follow up: https://leetcode.com/problems/number-of-distinct-islands-ii/description/ (hard)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+other links from above experience
+https://leetcode.com/discuss/post/5720580/google-swe-2-l3-bangalorehyd-aug-24-by-a-7kr8/
+
+ps: repeated, a horizontal axis that divides the area of all squares in 2 equal halves.
+
+os 3: 
+https://leetcode.com/problems/minimum-area-rectangle-ii/description/
+https://leetcode.com/problems/minimum-area-rectangle/description/
+
+
+
+https://leetcode.com/discuss/post/6275124/google-phone-screen-number-of-islands-in-lan4/
+repeated, binary tree island, size, distinct shapes
+
+
+
+
+
+
+
+https://leetcode.com/discuss/post/6352084/google-l4-phone-screening-round-by-anony-aa15/
+
+repeated-> normally with dijkstar -> if the edges are given in increasing order of destination time, then can be with single bfs also
+
+
+
+
+
+
+https://leetcode.com/discuss/post/6207174/google-l5-video-screen-by-anonymous_user-gjrc/
+
+first problem: https://www.geeksforgeeks.org/problems/number-of-distinct-islands/1 (dfs + observation)
+follow up: https://leetcode.com/problems/number-of-distinct-islands-ii/description/ (hard)
+
+
+
+https://leetcode.com/discuss/post/4979440/google-online-assessment-by-anonymous_us-u3is/
+
+
+
+
+
+
+Onsite round 1 : 
+#################################################################################
+
+
+https://leetcode.com/discuss/post/6676870/google-l4-onsite-1-by-anonymous_user-ehu5/
+
+repeated graph dsu probelem,
+similar problem https://leetcode.com/problems/last-day-where-you-can-still-cross/
+
+
+
+
+https://leetcode.com/discuss/post/6679126/google-onsite-interview-by-6npqo57mii-i6te/
+
+multisource bfs + (binary serach + bfs)
+
+
+
+
+
+
+
+
+https://leetcode.com/discuss/post/6459307/google-interview-experiences-compilation-u3cz/
+
+
+
+
+
+
+topic wise:
+
+
+problem statement/interview exp/leetcode problem link     similar problem in LC   solution kepoints(memory/time optimization)   github code link   comments  hardness(1-10)(1 very easy 10 very hard 5 medium )  

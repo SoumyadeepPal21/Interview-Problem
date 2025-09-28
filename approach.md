@@ -1,22 +1,21 @@
 1. Ask all clarifying questions, like
-	a. what will be the input and output
-	b. make some testcases
-	c. try to ask some constraints, like if the array is sorted, interger or float.
+	a. what are the inputs and outputs
+	b. try to ask some constraints, like if the array is sorted, interger or float.
+	c. make some testcases
 
 
 2. Tell your apporach breifly. If optimal came to mind fast, say that, if not try to put it like
- "the initail idea that came to my mind is like ...."
+ "the initail idea that came to my mind is like ...." and Tell what will be complexity of the approach
+3. if the interviewer is okay, try to code it. 
+
+4. after coding, check your code once and write the time and space complexity.
+
+5. try to dry run your code with some test cases. 
+
+6. Prepare good questions for the end. Interviewers value candidates who ask good questions at the end.
 
 
-3. Tell what will be complexity of the approach
 
-4. if the interviewer is okay, try to code it. 
-
-5. after coding, check your code once and write the time and space complexit.
-
-6. try to dry run your code with some test cases. 
-
-7. Prepare good questions for the end. Interviewers value candidates who ask good questions at the end.
 
 
 

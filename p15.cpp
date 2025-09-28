@@ -12,6 +12,8 @@ bool isDigit(char c) {
     return (c >= '0' && c <= '9');
 }
 
+
+
 char findOperator(string opr) {
     if (opr == "add") return '+';
     if (opr == "div") return '/';
@@ -51,8 +53,7 @@ int recursion(string s, int l, int r) {
             bracketPos = i;
         } else if (bracketPos != -1) {
             if (s[i] == '(') x++;
-            else if (s[i] == ')')
-                x--;
+            else if (s[i] == ')') x--;
             else if (s[i] == ',' && x == 0) {
                 commaPos = i;
                 break;

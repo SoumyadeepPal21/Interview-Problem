@@ -210,3 +210,53 @@ int main() {
 
     return 0;
 }
+
+
+
+Count Valid Triples with Absolute Difference Constraints
+
+good, tricky, greedy/observation, hard  
+        
+https://leetcode.com/discuss/post/5967505/google-onsite-count-valid-triples-with-a-zj8v/    
+phone screen: https://leetcode.com/discuss/post/6251197/google-l4-interview-experience-by-anonym-thmi/  
+
+https://github.com/SoumyadeepPal21/Interview-Problem/blob/main/p16.cpp
+
+
+
+
+
+// https://leetcode.com/discuss/post/5535080/l3-interview-round-1-by-anonymous_user-e11w/
+https://leetcode.com/discuss/post/6294044/google-phone-screen-by-anonymous_user-9egl/
+
+https://github.com/SoumyadeepPal21/Interview-Problem/blob/main/p1.cpp
+
+// Question - Given a formula of letters with parentheses, remove all parentheses from the formula.
+// Examples:
+// a-(b + c) -> a - b - c
+// a-(a - b) -> b
+
+
+
+
+
+// https://leetcode.com/discuss/post/6033289/google-l3-interview-experience-oct-2024-0xzt8/
+
+
+https://github.com/SoumyadeepPal21/Interview-Problem/blob/main/p15.cpp
+
+// Compute: add(sub(-5,10),mul(5,pow(2,5)))
+
+
+
+ultimate range modulo problem
+
+
+https://leetcode.com/submissions/detail/1780443806/
+
+
+
+
+
+
+
