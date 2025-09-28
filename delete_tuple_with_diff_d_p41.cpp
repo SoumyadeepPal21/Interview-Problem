@@ -9,47 +9,38 @@
 
 class IntegerStream {
 	multiset<int> stream;
-	vector<vector<int>> deletedTuples;
 	int diff;
 
-	void deleteFromStream(vector<int>& v) {
-		for (int x : v) stream.erase(stream.find(x));
-	}
 public:
 	IntegerStream(int diff) {
 		this->diff = diff;
 	}
+
 	void addInteger(int x) {
 		steam.insert(x);
 		auto curElement = stream.find(x);
+		vector<int> elements = { -1, -1, x, -1, -1};
 
 		if (curElement != stream.begin()) {
-			auto leftElement = prev(curElement);
+			elements[1] = *prev(curElement);
+			if (prev(curElement) != stream.begin())
+				elements[0] = *prev(prev(curElement));
+		}
 
-			if (leftElement != stream.begin() && x - * (prev(leftElement)) <= diff) {
-				deletedTuples.push_back({*prev(leftElement), *leftElement, x});
-				deleteFromStream(deletedTuples.back());
-				return;
+		if (next(curElement) != stream.end()) {
+			elements[3] = *next(curElement);
+			if (next(next(curElement)) != stream.end()) {
+				elements[4] = *next(next(curElement));
 			}
 		}
 
-
-		if (curElement != stream.begin() && next(curElement) != stream.end()) {
-			auto leftElement = prev(curElement);
-			auto rightElemet = next(curElement);
-
-			if (*rightElemet - *leftElement <= diff) {
-				deletedTuples.push_back({*leftElement, x, *rightElemet});
-				deleteFromStream(deletedTuples.back());
+		for (int i = 0; i < 3; i++) {
+			if (elements[i] != -1 && elements[i + 2] != -1) {
+				for (int j = i; j < i + 3; j++) {
+					stream.erase(elements[j]);
+				}
 				return;
 			}
-		}
-
-		if (next(curElement) != stream.end() && next(next(curElement)) != stream.end()
-		        && *next(next(curElement)) - x <= diff) {
-			deletedTuples.push_back({x, *next(curElement), *next(next(curElement))});
-			deleteFromStream(deletedTuples.back());
-			return;
 		}
 	}
 };
