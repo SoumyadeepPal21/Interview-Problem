@@ -1,0 +1,63 @@
+https://leetcode.com/discuss/post/4137303/google-interview-question-by-anonymous_u-fjju/
+
+
+
+vector<vector<int>> dp = {{INT_MIN, INT_MIN}, {0, INT_MIN}};
+for (int i = 0; i < days; i++) {
+	vector<int> ndp(2);
+	for (int j = 0; j < 2; j++) {
+		ndp[j] = max(dp[1][j], dp[0][!j]) + a[i][j] - cost[!j];
+	}
+	dp[0] = dp[1];
+	dp[1] = ndp;
+}
+return max(dp[1][0], dp[1][1]);
+
+
+
+https://leetcode.com/discuss/post/6138690/google-l3-onsite-interview-question-by-a-w45z/
+
+tricky counting question
+
+for (int i = 0; i < n; i++) {
+	back[i] = k...
+	then substring s[k + 1...i] has all equal chars
+	next[i + 1] = z
+	then substring s[i...z) has all equal chars
+	then ans += (i - k) * (z - i - 1)
+}
+
+
+hard version of the problem https://leetcode.com/problems/number-of-good-ways-to-split-a-string/description/
+
+
+
+
+Specific Interview Questions (Potentially useful for practice):
+
+https://leetcode.com/discuss/post/1693416/google-onsite-recursively-delete-leave-n-f183/
+
+repeated, both recursive and iterative solution 
+recursive: find max distance of a node under subtree is x, then the node will be delted at step x
+iterative: do like topo sort 
+
+
+
+https://leetcode.com/discuss/post/1718834/google-interview-question-2022-phone-ons-xvma/
+
+repeated evaluate postfix exp
+repeated time-range-worker
+1 5 Abby
+5 6 Abby, Ben
+..
+
+
+
+https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/description/
+
+repeated find path in a tree using LCA
+
+First round:
+
+repeated greedy
+binary matrix, We can flip either all row or column values into matrix. Return true if you can make all zeros else return false
