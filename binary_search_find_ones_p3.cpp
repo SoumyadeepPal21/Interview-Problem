@@ -29,3 +29,37 @@ vector<int> getAllOnes(int M) {
     findOnes(1, M, result);
     return result;
 }
+
+in case of sparse array(less number of 1's) we do K * Log(N) operations.
+                            in case of dense array we do 2 * N operations.
+
+                            N leaf node + N / 2 + N / 4 + ... + 1 queries (each node in binary tree, 1 query)
+                            (2 ^ log(N + 1) - 1) / (2 - 1) = 2 * N + 1
+
+
+
+
+                            // iterative solution
+
+                            int start = 0;
+                            while(start < N) {
+                            int pos = -1;
+                            int lft = start;
+                            int end = N - 1;
+                            while (lft <= end) {
+                            int mid = (lft + end) / 2;
+                            if (query(start, mid)) {
+                            pos = mid;
+                            end = mid - 1;
+                        } else {
+                            lft = mid + 1;
+                        }
+                        }
+                            if (pos != -1) {
+                            ans.push_back(pos);
+                        } else {
+                            break;
+                        }
+                            start = pos + 1;
+                        }
+

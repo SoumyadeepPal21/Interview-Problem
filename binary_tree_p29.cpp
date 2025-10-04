@@ -23,3 +23,24 @@ void merge(TreeNode* A, TreeNode* B) {
         }
     }
 }
+
+
+
+
+
+2. // https://leetcode.com/discuss/post/6033289/google-l3-interview-experience-oct-2024-0xzt8/
+struct TreeNode {
+    vector<TreeNode*> children;
+    vector<int> weights;
+};
+
+
+
+long long delteLeafs(TreeNode* node) {
+    long long res = 0;
+    for (int i = 0; i < children.size(); i++) {
+        res += min(weights[i], deleteLeafs(children[i]);
+    }
+           if (children.size() == 0) return INT_MAX;
+    return res;
+}
