@@ -48,9 +48,29 @@ read(10) returns [9, 1]
 next unread byte starts at read_ptr = 2.
 
 
-                                      this can be a variation of merge interval problem
+                                      this can be a variation of merge interval problem in case of overlap.
+	                                      say we will place the numbers only in the empty places of stream.
 
 
 
+
+
+
+
+// 4. https://leetcode.com/discuss/post/6084864/google-l4-interview-expereince-by-anonym-b142/
+// We have a file with the following format each line: startIP, endIP, cityName.
+// Question: Write a function that takes as input an IP address and outputs its associated cityName.
+// Example:
+// File format:
+// startIP, endIP, cityName
+// 1.0.1.1, 1.0.1.10, NYC
+// 1.0.1.20, 1.0.1.30, SF
+// ...
+// If the input is 1.0.1.9, the output should be NYC.
+// Write code for the function.
+
+
+	                                      make startIP, endIP to some integer (L, R) -> insert in some set
+	                                      for each L, store the cityName in some unordered map
 
 
