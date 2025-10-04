@@ -30,8 +30,6 @@ vector<pair<int, int>> mergeThreeSortedArr(vector<int>&A, vector<int>&B, vector<
 }
 
 int countTriplets(vector<int>& A, vector<int>& B, vector<int>& C, int d) {
-
-
     vector<pair<int, int>> merged = mergeThreeSortedArr(A, B, C);
     int n = merged.size();
     // applying sliding window

@@ -18,10 +18,6 @@ for (int i = 0; i < n; i++) {
 }
 
 
-
-time when machine available 5, and jobs = [ {1, 5}, {3, 4}, {3, 5}, {4, 5}] =>
-
-
 // take the machine which will be available first, say at time T.
 // if there are some jobs available at time <= T, then we will take those jobs.
 // if no jobs remaining wihin time T, then we will take the next job.
@@ -105,22 +101,43 @@ while (taskPtr < n) {
 }
 
 
-// k cpu's
 
 
-while (!runningMachines.empty() && taskPtr < n) {
-    if (runningMachines.empty() && taskPtr < n) {
-        time = tasks[taskPtr][1];
-    } else {
-        time = *runningMachines.begin();
-    }
-    while (taskPtr < n && time >= task[taskPtr][1]) {
-        availTasks.insert({task[taskPtr][2], task[taskPtr][0]});
-        taskPtr++;
-    }
+https://leetcode.com/problems/process-tasks-using-servers/submissions/1785655050/
+https://leetcode.com/problems/process-tasks-using-servers/description/
+
+https://leetcode.com/problems/meeting-rooms-iii/submissions/1785710468/
+https://leetcode.com/problems/meeting-rooms-iii/description/
 
 
 
+
+
+
+
+
+
+
+
+tps round of https://leetcode.com/discuss/post/2199510/google-l4-india-june-2022-accepted-by-an-qmyr/
+https://leetcode.com/discuss/post/2199394/google-phone-time-for-turn-by-anonymous_-c40y/
+
+
+set<pair<int, int>> machineTimes;
+for (int i = 0; i < k; i++) {
+    machineTimes.insert({0, i});
+}
+
+for (int i = 0; i < n; i++) {
+    int nextTaskStartTime = max(machineTimes.begin()->first, task[i].first);
+    int nextTaskMachine = machineTimes.begin()->second;
+    machinsTimes.erase(machineTimes.begin());
+    machineTimes.insert({nextTaskStartTime + task[i].second - task[i].first, nextTaskMachine});
+    machineId[i] = nextTaskMachine;
 }
 
 
+
+
+
+https://leetcode.com/problems/single-threaded-cpu/description/
