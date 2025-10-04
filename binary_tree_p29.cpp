@@ -44,3 +44,15 @@ long long delteLeafs(TreeNode* node) {
            if (children.size() == 0) return INT_MAX;
     return res;
 }
+
+3.
+// There are n number of routers connected to each other at some distances. A source router src will receive a message and broadcast it to all routers within specified distance d. Return True/False weather destination router des got the message or not. (Simple BFS algorithm).
+// Given: router names and their distances, src, des and d.
+// FollowUp: Message goes only to first nearest router. Return True/False for the same question.
+
+
+
+O(N ^ 2) -> create graph
+O(N * D) -> bfs
+
+
