@@ -1,5 +1,7 @@
 1. // https://leetcode.com/discuss/post/2526280/google-onsite-london-by-anonymous_user-xkvd/
 
+add the integer to big integer queue, take the smallest elemnt from big queue to small queue
+if small size queue gets bigger, then take the largest element of small queue to big queue.
 
 
 // Supposing that you have a stream of integer, implement the following two methods to return the median value (value of the middle. It's not the mean). The median value does not need to be exact. It can be within a range of 2^n-1 to 2^n+1.
@@ -32,3 +34,6 @@ long long findMedian(int num) {
 
 
 2. https://leetcode.com/problems/find-median-from-data-stream/
+
+
+
