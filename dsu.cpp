@@ -42,3 +42,52 @@ string(string word, string lang1, string lang2) {
 	if (m[id].count(lang2)) return idToWord[m[id][lang2]];
 	return "";
 }
+
+
+
+
+2.
+
+
+findEqCells(int i, int j, vector<pair<int, int>>& cells, char ch) {
+	if (i >= n || i < 0 || j < 0 || j >= m || grid[i][j] != ch && vis[i][j]) return;
+	cells.push_back({i, j});
+	for (int i = 0; i < 4; i++) {
+		findEqCells(ni, nj, cells, ch);
+	}
+}
+
+main() {
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			if (vis[i][j] || grid[i][j] != '*') continue;
+			findEqCells(i, j, cells, grid[i][j]);
+			for (auto cell : cells) {
+				par[cell] = cells[0];
+			}
+		}
+	}
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			if (vis[i][j] || grid[i][j] != '.') continue;
+			findEqCells(i, j, cells, grid[i][j]);
+			for (auto cell : cells) {
+				if (cell.first == 0 || cell.first == n - 1 || cell.second == 0 ||
+				        cell.second == m - 1) {
+					isLand = false;
+				}
+				if (grid[adjcell] == '*') {
+					store that adj cell
+				}
+			}
+			if (island) {
+				int p = par[adjcell];
+				count[p]++;
+			}
+		}
+	}
+	for (auto q : queries) {
+		int p = par[q];
+		cout << count[p] << endl;
+	}
+}
